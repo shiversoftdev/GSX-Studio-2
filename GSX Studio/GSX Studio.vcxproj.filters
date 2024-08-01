@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Dialogs">
+      <UniqueIdentifier>{90c76b98-bdf2-4aa3-a9e9-3c19d64d4625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dialogs">
+      <UniqueIdentifier>{4ee4cbec-51d6-4e20-b276-43942eb66621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Splash">
+      <UniqueIdentifier>{5c0c4d9d-6b15-4276-93a1-f94666b63f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Compiler">
+      <UniqueIdentifier>{5f1c1a58-7826-48e6-9172-ac2f21a3c5b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XLNonTerminal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GSXProject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplorerScriptWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GSCPart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GSCScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportProjectDialog.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="XEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitForm1.cpp">
+      <Filter>Header Files\Splash</Filter>
+    </ClCompile>
+    <ClCompile Include="XPlatform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBMGR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XPlatformMemory.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GSXProject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GSCScript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GSCPart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="AskToSaveDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplorerScriptWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplorerPartWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewScriptDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="NewPartDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteConfirmationDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="RenamePartDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="RenameScriptDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportProjectDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifyDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="XEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitForm1.h">
+      <Filter>Header Files\Splash</Filter>
+    </ClInclude>
+    <ClInclude Include="XLNonTerminal.h">
+      <Filter>Header Files\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="XLState.h">
+      <Filter>Header Files\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="XParseLanguage.h">
+      <Filter>Header Files\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="XParseNode.h">
+      <Filter>Header Files\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="XParser.h">
+      <Filter>Header Files\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="XParseTree.h">
+      <Filter>Header Files\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="EditProjectSettings.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="XPlatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBMGR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XPlatformMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AskToSaveDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjectDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewScriptDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPartDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteConfirmationDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenamePartDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportProjectDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotifyDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameScriptDialog.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XEditor.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProjectSettings.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPlatformMemory.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Downloads\favicon (10).ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="autocompletebox.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="build.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Method_purple_64x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Method_purple_32x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="IntelliSenseKeyword_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ActiveErrorSquiggle_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Alert_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="autocompletebox - Copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="BuildSolution_16x - Copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="BuildSolution_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="BuildSolution_16x1 - Copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="BuildSolution_16x1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Close_12x_24 - Copy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Close_12x_24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Close_WhiteNoHalo_12x_16x_24 - Copy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Close_WhiteNoHalo_12x_16x_24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Connect_16x - Copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Connect_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Connect_16x1 - Copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Connect_16x1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Finance_16x - Copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Finance_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Finance_16x1 - Copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Finance_16x1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Import_16x - Copy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Import_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="InformationSymbol_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="NewFileCollection_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="NewScript_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="OpenFolder_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Property_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Run_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Run_16x_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Run_16x1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Run_16x2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Run_16x3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Run_32x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Run_grey_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Run_grey_16xMD.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Save_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Save_16x1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Save_16x2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="SaveAll_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Settings_16x.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GSX Studio.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="DefaultCode.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="defaultitems.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Keywords.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="fix.txt" />
+    <Text Include="Paths.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="GSXStyling.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

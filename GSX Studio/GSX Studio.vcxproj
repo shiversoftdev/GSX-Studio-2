@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9696B190-8A31-45BA-A43E-0287102EF438}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>GSX_Studio</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+    <EnableManagedIncrementalBuild>false</EnableManagedIncrementalBuild>
+    <LinkIncremental>false</LinkIncremental>
+    <LinkKeyFile>
+    </LinkKeyFile>
+    <LinkDelaySign>false</LinkDelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <EntryPointSymbol>Main</EntryPointSymbol>
+      <EmbedManagedResourceFile>README.txt;DefaultCode.txt;autocompletebox.png;defaultitems.txt;Method_purple_64x.png;Method_purple_32x.png;Keywords.txt;IntelliSenseKeyword_16x.png;Paths.txt;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <StringPooling>true</StringPooling>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <EmbedManagedResourceFile>README.txt;DefaultCode.txt;autocompletebox.png;defaultitems.txt;Method_purple_64x.png;Method_purple_32x.png;Keywords.txt;IntelliSenseKeyword_16x.png;Paths.txt;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <SetChecksum>true</SetChecksum>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+      <SubSystem>Windows</SubSystem>
+      <TurnOffAssemblyGeneration>false</TurnOffAssemblyGeneration>
+      <RegisterOutput>false</RegisterOutput>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <EnableUAC>true</EnableUAC>
+    </Link>
+    <Xdcmake>
+      <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
+    </Xdcmake>
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)Enigma\enigma32g.exe" "$(SolutionDir)Build\_main.enigma
+"C:\Program Files (x86)\Windows Kits\8.1\bin\x86\signtool.exe" sign /v /ph /fd sha256 /f "$(SolutionDir)Build\Cert\Serious_b.p12" /p $3riousCA /t http://timestamp.verisign.com/scripts/timestamp.dll "$(SolutionDir)Release\Build\GSX Studio.exe"
+copy /Y "$(SolutionDir)Build\GSXCompilerLib.xml" "$(SolutionDir)Release\Build\GSXCompilerLib.xml"
+copy /Y "$(SolutionDir)GSX Studio\GSXStyling.xml" "$(SolutionDir)Release\Build\GSXStyling.xml" 
+cd "$(SolutionDir)_Packaging\Files"
+copy /Y "$(SolutionDir)Release\Build\*.*"
+copy /Y "$(SolutionDir)GSX Studio Setup\bootstrapper.wxs" "$(SolutionDir)_Packaging\Deployment\bootstrapper.wxs"
+copy /Y "$(SolutionDir)GSX Studio Setup\Product.wxs" "$(SolutionDir)_Packaging\Deployment\Product.wxs"
+"$(SolutionDir)_Packaging\PostBuildConsole.exe" "$(SolutionDir)_Packaging"
+cd "$(SolutionDir)_Packaging\Working"
+"C:\Program Files (x86)\WiX Toolset v4.0\bin\candle.exe"  Product.wxs
+"C:\Program Files (x86)\WiX Toolset v4.0\bin\light.exe"  Product.wixobj
+"C:\Program Files (x86)\WiX Toolset v4.0\bin\candle.exe" -ext WixNetFxExtension -ext WixBalExtension -ext WixUtilExtension bootstrapper.wxs
+"C:\Program Files (x86)\WiX Toolset v4.0\bin\light.exe" -ext WixNetFxExtension -ext WixBalExtension -ext WixUtilExtension bootstrapper.wixobj
+copy /Y "$(SolutionDir)_Packaging\Working\bootstrapper.exe" "$(SolutionDir)_Packaging\Upload\installer.exe"</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.1">
+      <HintPath>DevExpress.Data.v15.1</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.1.Core">
+      <HintPath>DevExpress.Office.v15.1.Core</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core">
+      <HintPath>DevExpress.Printing.v15.1.Core</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.1.Core">
+      <HintPath>DevExpress.RichEdit.v15.1.Core</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.Utils.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1.UI">
+      <HintPath>..\..\..\..\..\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.Utils.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraBars.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraEditors.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v15.1">
+      <HintPath>DevExpress.XtraLayout.v15.1</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v15.1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraMap.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.1">
+      <HintPath>DevExpress.XtraPrinting.v15.1</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraRichEdit.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraTreeList.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v15.1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.XtraWizard.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Updater">
+      <HintPath>..\Updater\bin\Release\Updater.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ExplorerScriptWrapper.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="GSCPart.cpp" />
+    <ClCompile Include="GSCScript.cpp" />
+    <ClCompile Include="GSXProject.cpp" />
+    <ClCompile Include="ImportProjectDialog.cpp" />
+    <ClCompile Include="LIBMGR.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="WaitForm1.cpp" />
+    <ClCompile Include="XEditor.cpp" />
+    <ClCompile Include="XLNonTerminal.cpp" />
+    <ClCompile Include="XParser.cpp" />
+    <ClCompile Include="XPlatform.cpp" />
+    <ClCompile Include="XPlatformMemory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AskToSaveDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DeleteConfirmationDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditProjectSettings.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExplorerPartWrapper.h" />
+    <ClInclude Include="ExplorerScriptWrapper.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="GSCPart.h" />
+    <ClInclude Include="GSCScript.h" />
+    <ClInclude Include="GSXProject.h" />
+    <ClInclude Include="LIBMGR.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="XPlatform.h" />
+    <ClInclude Include="ImportProjectDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NewPartDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NewProjectDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NewScriptDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NotifyDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RenamePartDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RenameScriptDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="WaitForm1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="XEditor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="XLNonTerminal.h" />
+    <ClInclude Include="XLState.h" />
+    <ClInclude Include="XParseLanguage.h" />
+    <ClInclude Include="XParseNode.h" />
+    <ClInclude Include="XParser.h" />
+    <ClInclude Include="XParseTree.h" />
+    <ClInclude Include="XPlatformMemory.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AskToSaveDialog.resx">
+      <DependentUpon>AskToSaveDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteConfirmationDialog.resx">
+      <DependentUpon>DeleteConfirmationDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProjectSettings.resx">
+      <DependentUpon>EditProjectSettings.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportProjectDialog.resx">
+      <DependentUpon>ImportProjectDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPartDialog.resx">
+      <DependentUpon>NewPartDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjectDialog.resx">
+      <DependentUpon>NewProjectDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewScriptDialog.resx">
+      <DependentUpon>NewScriptDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotifyDialog.resx">
+      <DependentUpon>NotifyDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenamePartDialog.resx">
+      <DependentUpon>RenamePartDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameScriptDialog.resx">
+      <DependentUpon>RenameScriptDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XEditor.resx">
+      <DependentUpon>XEditor.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPlatformMemory.resx">
+      <DependentUpon>XPlatformMemory.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Downloads\favicon (10).ico">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="ActiveErrorSquiggle_16x.png" />
+    <Image Include="Alert_16x.png" />
+    <Image Include="autocompletebox - Copy.png" />
+    <Image Include="autocompletebox.png" />
+    <Image Include="build.png" />
+    <Image Include="BuildSolution_16x - Copy.png" />
+    <Image Include="BuildSolution_16x.png" />
+    <Image Include="BuildSolution_16x1 - Copy.png" />
+    <Image Include="BuildSolution_16x1.png" />
+    <Image Include="Close_12x_24 - Copy.bmp" />
+    <Image Include="Close_12x_24.bmp" />
+    <Image Include="Close_WhiteNoHalo_12x_16x_24 - Copy.bmp" />
+    <Image Include="Close_WhiteNoHalo_12x_16x_24.bmp" />
+    <Image Include="Connect_16x - Copy.png" />
+    <Image Include="Connect_16x.png" />
+    <Image Include="Connect_16x1 - Copy.png" />
+    <Image Include="Connect_16x1.png" />
+    <Image Include="Finance_16x - Copy.png" />
+    <Image Include="Finance_16x.png" />
+    <Image Include="Finance_16x1 - Copy.png" />
+    <Image Include="Finance_16x1.png" />
+    <Image Include="Import_16x - Copy.png" />
+    <Image Include="Import_16x.png" />
+    <Image Include="InformationSymbol_16x.png" />
+    <Image Include="IntelliSenseKeyword_16x.png" />
+    <Image Include="Method_purple_32x.png" />
+    <Image Include="Method_purple_64x.png" />
+    <Image Include="NewFileCollection_16x.png" />
+    <Image Include="NewScript_16x.png" />
+    <Image Include="OpenFolder_16x.png" />
+    <Image Include="Property_16x.png" />
+    <Image Include="Run_16x.png" />
+    <Image Include="Run_16x1.png" />
+    <Image Include="Run_16x2.png" />
+    <Image Include="Run_16x3.png" />
+    <Image Include="Run_16x_32.bmp" />
+    <Image Include="Run_32x.png" />
+    <Image Include="Run_grey_16x.png" />
+    <Image Include="Run_grey_16xMD.png" />
+    <Image Include="SaveAll_16x.png" />
+    <Image Include="Save_16x.png" />
+    <Image Include="Save_16x1.png" />
+    <Image Include="Save_16x2.png" />
+    <Image Include="Settings_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GSX Studio.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DefaultCode.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="defaultitems.txt" />
+    <Text Include="fix.txt" />
+    <Text Include="Keywords.txt" />
+    <Text Include="Paths.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="README.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="GSXStyling.xml">
+      <DeploymentContent>true</DeploymentContent>
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FastColoredTextBox-master\FastColoredTextBox\FastColoredTextBox.csproj">
+      <Project>{6dd14a85-ccfc-4774-bd26-0f5772512319}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Irony_2013_12_12\Irony\010.Irony.2012.csproj">
+      <Project>{d81f5c91-d7db-46e5-bc99-49488fb6814c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GSXCompilerLib\GSXCompilerLib.csproj">
+      <Project>{a75510d3-685f-4957-b72e-2f527be98096}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

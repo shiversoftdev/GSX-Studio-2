@@ -1,0 +1,1026 @@
+Print( text ):Print:Prints the parameter to the console
+Print3D( start, end, color, depthTest, duration ):Print3d:Prints 3d world text. Disabled in release build
+Assert( boolexpr ):Assert:Exit the script if the expression in the parameter is not true
+AssertMsg( boolexpr, messagetext ):AssertMsg:Exit the script if the expression in the parameter is not true and print the message
+SetInt( address, value ):SetInt:Set an integer in memory at the specified address to the specified value (HOST ONLY)
+GetInt( address, value ):GetInt:Get an integer in memory at the specified address (HOST ONLY)
+SetByte( address, value ):SetByte:Set a byte in memory at the specified address to the specified value (HOST ONLY)
+GetByte( address, value ):GetByte:Get a byte in memory at the specified address (HOST ONLY)
+SetFloat( address, value ):SetFloat:Set a float in memory at the specified address to the specified value (HOST ONLY)
+GetFloat( address, value ):GetFloat:Get a float in memory at the specified address (HOST ONLY)
+SetString( address, value ):SetString:Set a string in memory at the specified address (HOST ONLY)
+GetString( address, ?length ):GetString:Get a string from memory. If length is specified, will read length, otherwise, will read until null up to 255 characters (HOST ONLY)
+SetBytes( address, value ):SetBytes:Set bytes in memory at the specified address (HOST ONLY)
+GetBytes( address, length ):GetBytes:Get a byte array from memory at the specified address of the specified length (HOST ONLY)
+is_redacted():is_redacted:Determine if the platform is redacted or not
+RPC( address, params.. ):RPC:Call an internal function with the params specified (HOST ONLY)
+__RPCPCBASE__:__RPCPCBASE__:Base address of PC RPC
+__RPCCNSLBASE__:__RPCCNSLBASE__:Base address of Console RPC
+__RPCCNSLRET__:__RPCCNSLRET__:Return storage of Console RPC
+__RPCPCRET__:__RPCPCRET__:Return storage of PC RPC
+chartoint( value ):chartoint:Convert a character into a byte value
+inttochar( value ):inttochar:Convert a byte value into a character
+istrue( value ):istrue:Is the value true and defined
+arraycall( array, function_ref ):arraycall:Each element in the array will call the function without threading
+arraythread( array, function_ref ):arraythread:Each element in the array will thread the function
+rgb( r, g, b ):rgb:Convert 3 RGB values to Black Ops II RGB convention (n / 255)
+rgb255( r, g, b ):rgb255:Convert 3 Black Ops II RGB values to normal RGB convention
+GetName():GetName:Get the name of the caller
+GetPlayerFromName( player ):GetPlayerFromName:Get a player from his/her name
+platformswitch( vPS3, vXB, vPC, vRedacted, vDefault ):platformswitch:Picks a value based on the current platform.
+is_xenon
+is_ps3
+is_pc
+debugbreak
+array
+arrayremovevalue
+arrayremoveindex
+arrayinsert
+arraycombine
+arraycopy
+isinarray
+spawnstruct
+PrintLn( text ):Println:Prints 'text' in the console as a new line
+iPrintlnBold( text ):PrintlnBold:Prints 'text' in the middle of the players screen 
+Line( start, end, color, depthTest, duration ):Line:Drawns a line from 'start' to 'end'. Disabled in release build
+Box( origin, mins, maxs, yaw, color, 1, 0, frames )
+debugstar
+pixbeginevent
+pixendevent
+clienthassnapshot
+getsystemtime
+getservertime
+getmapcenter
+GetArrayKeys( array ):GetArrayKeys:Returns an array consisting of the keys of the input array
+getfirstarraykey
+getnextarraykey
+getlastarraykey
+getprevarraykey
+splitargs
+BulletTrace( start, end, hit_characters, ignore_entity ):BulletTrace:Allows script to do a point trace with MASK_SHOT. Returns hit position, hit entity, hit surface normal
+tracepoint
+SetThirdPerson( enabled ):setThirdPerson:Sets third person depending on the value given
+getlocalclientpos
+getlocalclienteyepos
+getlocalclientangles
+getmaxlocalclients
+getactivelocalclients
+localclientactive
+IsSplitScreenHost():isSplitScreenHost:Returns true if the game is a splitscreen game
+IsSplitScreen():isSplitScreen:Returns true if the game is a splitscreen game
+AimingAtFriendly():aimingAtFriendly:Returns true if the player is aiming at a teammate
+RandomInt( max ):RandomInt:Returns a random integer between 0 and max - 1 inclusive
+RandomFloat( max ):RandomFloat:Returns a random floating point number r, where 0 <= r < max
+RandomIntRange( min, max ):RandomIntRange:Returns a random integer r, where min <= r < max
+RandomFloatRange( min, max ):RandomFloatRange:Returns a random floating point number r, where min <= r < max
+Sin( angle ):Sin:Trigonometric function
+Cos( angle ):Cos:Trigonometric function
+Tan( angle ):Tan:Trigonometric function
+ASin( sinValue ):asin:Trigonometric function
+ACos( cosValue ):acos:Trigonometric function
+ATan( tanValue ):atan:Trigonometric function
+Int( value ):int:Casts a floating point number or a string to an integer
+Float( value ):float:Casts a floating point number or a string to an float
+Min( value, value ):Min:Returns the lowest value between the two
+Max( value, value ):Max:Returns the greatest value between the two
+Floor( float ):floor:Returns a rounded down value of the float given, or if negative, rounded up (closest to zero)
+Ceil( float ):ceil:Returns a rounded up value of the float given, or if negative, rounded down (farthest to zero)
+sqrt
+lerpfloat
+lerpvector
+getminbitcountfornum
+IsString( variable ):IsString:Checks whether this entity/variable is a string
+IsArray( variable ):isArray:Checks whether this entity/variable is an array
+VectorFromLineToPoint( LineA, LineB, P ):VectorFromLineToPoint:Given a line and a point P, this returns a vector perpendicular to the line and pointing from the line to P
+PointOnSegmentNearestToPoint( SegmentA, SegmentB, P ):PointOnSegmentNearestToPoint:Given a line segment and a point P, this returns the point on the segment that is closest to P
+Distance( point1, point2 ):Distance:Returns the distance between two points
+Distance2D( point1, point2 ):Distance2D:Returns the distance between two points, ignores height difference
+DistanceSquared( point1, point2 ):DistanceSquared:Returns the squared distance between two points - this is cheaper than the actual distance as it doesn't involve a square root
+Length( vector ):Length:Returns the length of the given vector
+LengthSquared( vector ):lengthSquared:Returns the squared vector length for the given vector - this is cheaper than the actual vector length as it doesn't involve a square root
+Closer( reference, point_a, point_b ):Closer:Tests which of two points is the closest. Returns true if 'point a' is closer to the reference than 'point b'
+VectorDot( vector_a, vector_b ):VectorDot:Returns the dot product of two vectors
+vectorcross
+VectorNormalize( vector ):VectorNormalize:Returns a normalized copy of this vector
+VectorLerp( from, to, fraction ):VectorLerp:Linear interpolates between two vectors
+CombineAngles( angles_a, angles_b ):CombineAngles:Returns angles b reoriented by angles a
+absangleclamp180
+project2dto3d
+forwardrotatearoundupbyangle
+GetSubstr( string, start_index, end_index ):getSubStr:Returns the substring of characters >= <start index> and < <end index>. <end index> is optional
+ToLower( string ):toLower:Converts <string> to a lower case string which is returned
+StrTok( string, delim ):strTok:Tokenizes <string> by the delimiters <delim>. Returns the array of string tokens
+IsSubstr( string, substring ):isSubStr:Returns true/false if <substring> is a substring of <string>. Case sensitive
+makelocalizedstring
+spawnfakeent
+deletefakeent
+setfakeentorg
+Spawn( entity_type, origin, script_flags ):Spawn:Spawns 'entity_type' at the 'origin'
+spawnplane
+getent
+getentbynum
+getentarray
+getlocalplayers
+getlocalplayer
+getnonpredictedlocalplayer
+IsAlive( sentient_entity ):isAlive:Checks whether the 'entity' is alive
+GetWeaponAmmoClip( weapon_name ):getWeaponAmmoClip:Get the amount of ammo left in the player's weapon's current clip
+IsThrowingGrenade():isThrowingGrenade:Returns true if player is throwing grenade
+IsMeleeing():isMeleeing:Returns true if player is meleeing
+IsSwitchingWeapons():isSwitchingWeapons:Returns true if the player is switching weapons
+IsOnTurret()::isOnTurret:Returns true if on turret
+usefootsteptable
+usefootstepfxtable
+scriptcallbackonfootstepevent
+setdemolockonvalues
+tablelookup
+tablelookupistring
+tablelookuprownum
+tablelookupcolumnforrow
+tablelookupfindcoreasset
+getweaponmodel
+LoadFX( effect ):LoadFX:Load the given effect
+PlayFX( effect_id, position_of_effect, forward_vector, up_vector ):PlayFX:Plays the 'effect'
+PlayLoopedFX( effect_id, repeat_delay, position, cull_distance, forward, up ):PlayLoopedFX:Plays the 'effect' in a loop
+stopfx
+isfxplaying
+bullettracer
+disableimpactmarks
+enableimpactmarks
+TriggerFX( effect_entity, when ):triggerFX:Replays the effect associated with the effect entity. This does not kill any existing effects
+visionsetnaked
+visionsetnakedlerp
+getvisionsetnaked
+setripplewave
+PlayLoopSound( aliasname ):PlayLoopSound:Play a sound as a loop
+stoploopsound():StopLoopSound:Stop a looping sound
+PlaySound( aliasname, notification_string, stoppable_flag ):playSound:Play the sound alias as if coming from the entity
+soundplaying
+deactivatereverb
+setreverb
+setsoundvolume
+setsoundpitch
+setsoundvolumerate
+setsoundpitchrate
+StopSound( sound_id ):StopSound:Stops playing 'sound id'
+getrealtime
+getplaybacktime
+getknownlength
+setgroupsnapshot
+setglobalfutz
+setambientsnapshot
+setambientsidechainduck
+sethealthsnapshot
+setlevelfadesnapshot
+scalespeed
+soundsetmusicstate
+soundloopemitter
+setsoundcontext
+soundstoploopemitter
+soundlineemitter
+soundstoplineemitter
+getsoundname
+getsoundcount
+issoundloop
+stoplocalsound
+soundtimescale
+allocatesoundrandoms
+createsoundrandom
+allocatemixerlights
+ismixerlightbehaviorhardcoded
+ismixerbehaviorhardcoded
+precacherumble
+playrumbleonposition
+getdebugdvar
+getdebugdvarint
+getdebugdvarfloat
+setdvarbool
+setdvarfloat
+setdvarint
+setdvar
+setsaveddvar
+ismaturecontentenabled
+isstereoon
+openfile
+closefile
+fprintln
+fprintfields
+freadln
+fgetarg
+ui3dsetwindow
+playbink
+stopbink
+getbinklength
+isbinkfinished
+isinvehicle
+sessionmodeisonlinegame
+sessionmodeisprivateonlinegame
+sessionmodeisprivate
+sessionmodeissystemlink
+sessionmodeiszombiesgame
+gamemodeismode
+gamemodeisusingxp
+gamemodeisusingstats
+isps3
+ispc
+isxenon
+getsurfacestrings
+findstaticmodelindex
+hidestaticmodel
+unhidestaticmodel
+getfootstepstrings
+footstepdonothing
+footstepdoeverything
+footstepdosound
+footstepdofootstepfx
+newmaterialelem
+newtextelem
+newradialmaterialelem
+deleteelem
+setcolorelem
+moveelem
+rotateelem
+elemvirtualtophysical
+elemphysicaltovirtual
+argusgetui
+argusgetorigin
+argussetvisible
+argussetstacked
+argussetdistance
+argussetbracket
+argussetattach
+argussetoffset
+argussetfaderate
+argusforcedrawbracket
+luiload
+luishow
+luihide
+luievent
+luienable
+luidisable
+isluienabled
+suienable
+suidisable
+setambientpackage
+setambientroomcontextengine
+forceambientroom
+forceambientpackage
+createqrcode
+deleteqrcode
+ropepulse
+getcamposbylocalclientnum
+getcamanglesbylocalclientnum
+demoisanyfreemovecamera
+demoismoviecamera
+demoiseditcamera
+demoisdollycamera
+getscreenwidth
+getscreenheight
+getatrloaded
+findanimbyname
+spawncollision
+spawntimedfx
+spawnvehicle
+spawnturret
+precacheturret
+spawnhelicopter
+getweaponstowedmodel
+getanimlength
+animhasnotetrack
+getnotetracktimes
+getbrushmodelcenter
+getdemofileid
+getplayers
+countplayers
+getdamageableentarray
+objective_add
+objective_delete
+objective_state
+objective_icon
+objective_position
+objective_onentity
+objective_clearentity
+objective_setvisibletoplayer
+objective_setinvisibletoplayer
+objective_setvisibletoall
+objective_setinvisibletoall
+objective_setsize
+objective_setprogress
+objective_setgamemodeflags
+objective_getgamemodeflags
+objective_setplayerusing
+objective_clearplayerusing
+objective_clearallusing
+missile_createattractorent
+missile_createattractororigin
+missile_createrepulsorent
+missile_createrepulsororigin
+missile_deleteattractor
+groundtrace
+bullettracepassed
+sighttracepassed
+physicstrace
+playerphysicstrace
+playerbullettrace
+worldtrace
+getmovedelta
+getangledelta
+getnorthyaw
+precachemodel
+precacheshellshock
+precacheitem
+precacheshader
+precachestring
+precachemenu
+precachestatusicon
+precacheheadicon
+precachelocationselector
+playfxontag
+getwaterheight
+spawnfx
+fxblocksight
+physicsexplosionsphere
+physicsexplosioncylinder
+physicsjolt
+physicsjetthrust
+createstreamerhint
+aretexturesloaded
+setexpfog
+setvolfog
+setculldist
+grenadeexplosioneffect
+magicbullet
+radiusdamage
+setplayerignoreradiusdamage
+glassradiusdamage
+getnumparts
+getpartname
+earthquake
+newhudelem
+newclienthudelem
+newdamageindicatorhudelem
+newteamhudelem
+newscorehudelem
+newdebughudelem
+resettimeout
+weaponfiretime
+weaponreloadtime
+isweaponcliponly
+isweapondetonationtimed
+weaponclipsize
+weaponfuellife
+weaponissemiauto
+weaponisboltaction
+weaponisgasweapon
+weapontype
+weaponclass
+weaponmountable
+weaponinventorytype
+weaponstartammo
+weaponmaxammo
+weaponaltweaponname
+weapondualwieldweaponname
+weaponisdualwield
+getwatcherweapons
+getretrievableweapons
+getweaponmindamagerange
+getweaponmaxdamagerange
+getweaponmindamage
+getweaponmaxdamage
+getweaponfusetime
+getweaponexplosionradius
+getweaponprojexplosionsound
+isweaponspecificuse
+isweapondisallowedatmatchstart
+isweaponscopeoverlay
+isweaponequipment
+isweaponprimary
+isturretfiring
+getweaponfiresound
+getweaponfiresoundplayer
+getweaponpickupsoundplayer
+getweaponpickupsound
+getweaponindexfromname
+getweaponsupportedattachments
+weaponhasattachment
+weaponattachmentcount
+getweaponattachments
+weaponblocksprone
+isitemrestricted
+getweapondisplayname
+isplayer
+isplayernumber
+setwinningplayer
+setwinningteam
+announcement
+clientannouncement
+getteamscore
+setteamscore
+setteamhasmeat
+setclientnamemode
+updateclientnames
+getteamplayersalive
+getdroppedweapons
+objective_team
+objective_visibleteams
+artilleryiconlocation
+logprint
+worldentnumber
+obituary
+reviveobituary
+adddemobookmark
+positionwouldtelefrag
+boundswouldtelefrag
+recordusedspawnpoint
+testspawnpoint
+getstarttime
+map_restart
+missionfailed
+exitlevel
+killserver
+addtestclient
+setobjectivepointstatus
+setbombtimer
+setroundsplayed
+setinitialplayersconnected
+setmatchflag
+setmatchtalkflag
+setarchive
+allclientsprint
+clientprint
+mapexists
+isvalidgametype
+matchend
+skillupdate
+recordleaguewinner
+setteamspyplane
+getteamspyplane
+setteamsatellite
+getteamsatellite
+getassignedteam
+getdefaultclassslot
+getitemattachment
+getitemattachmentallocationcost
+getreffromitemindex
+getitemgroupfromitemindex
+getbaseweaponitemindex
+getgametypeenumfromname
+setscoreboardcolumns
+recordnumzombierounds
+recordgameresult
+gettouchingvolume
+recordmatchsummaryzombieendgamedata
+matchrecorderincrementheaderstat
+recordmatchinit
+recordzombieroundstart
+recordzombieroundend
+getcustomteamname
+recordplayerstats
+recordplayermatchend
+recordmatchbegin
+setvotestring
+setvotetime
+setvoteyescount
+setvotenocount
+reportmtu
+pcserverupdateplaylist
+kick
+ban
+map
+playrumblelooponposition
+stopallrumbles
+soundexists
+soundgetplaybacktime
+islocalgame
+isglobalstatsserver
+setminimap
+setmapcenter
+setdemointermissionpoint
+setgameendtime
+setslowmotion
+numremoteclients
+searchforonlinegames
+quitlobby
+quitparty
+startparty
+startprivatematch
+visionsetnight
+visionsetlaststand
+setgravity
+endlobby
+clientsysregister
+clientsyssetstate
+getsnapshotindexarray
+snapshotacknowledged
+isai
+getaitriggerflags
+disablezombies
+enablezombies
+isvehicle
+getmaxvehicles
+disabledestructiblepieces
+enablealldestructiblepieces
+createdynentandlaunch
+getvehicletriggerflags
+collisiontestpointsinsphere
+collisiontestpointsincylinder
+collisiontestpointsinpill
+collisiontestpointsincone
+collisiontestpointsinbox
+qsortscoredspawnpointsascending
+matrix4x4transformpoints
+setspawnpointrandomvariation
+clearspawnpoints
+addspawnpoints
+getsortedspawnpoints
+clearspawnpointsbaseweight
+setspawnpointsbaseweight
+getplayerspawnid
+isspawnpointvisible
+addsphereinfluencer
+addcylinderinfluencer
+removeinfluencer
+enableinfluencer
+setinfluencerteammask
+setdebugsideswitch
+target_set
+target_getoffset
+target_remove
+target_setshader
+target_setoffscreenshader
+target_isinrect
+target_isincircle
+target_startreticlelockon
+target_clearreticlelockon
+target_getarray
+target_istarget
+target_setattackmode
+target_setjavelinonly
+target_setturretaquire
+getmaxactivecontracts
+getcontractstattype
+getcontractstatname
+getcontractrewardxp
+getcontractrewardcp
+getcontractrequirements
+getcontractname
+getcontractrequiredcount
+getcontractresetconditions
+getfogsettings
+pixmarker
+changeadvertisedstatus
+setqosgamedatapayload
+resetqosgamedatapayload
+incrementcounter
+getcountertotal
+enableoccluder
+ispregameenabled
+ispregamegamestarted
+pregamestartgame
+sethostmigrationstatus
+starthostmigration
+gamerepthresholdexceeded
+zerogravityvolumeon
+zerogravityvolumeoff
+precacheanimstatedef
+registerclientfield
+codesetclientfield
+codegetclientfield
+codesetplayerstateclientfield
+codegetplayerstateclientfield
+codesetworldclientfield
+codegetworldclientfield
+getclientfieldversion
+getutc
+scriptmodelsuseanimtree
+delete
+forcedelete
+isplayingloopsound
+setsoundentcontext
+setloopstate
+makelight
+getlightcolor
+setlightcolor
+getlightintensity
+setlightintensity
+getlightradius
+setlightradius
+getlightfovinner
+getlightfovouter
+setlightfovrange
+getlightexponent
+setlightexponent
+makelightslave
+makemixerlight
+activatemixer
+setmixerlightbehavior
+setmixerbehavior
+setmixerexploderid
+setmixerlightparam
+setmixerparam
+setmixerl2rrampspeed
+setmixerr2lrampspeed
+setmixerlightintensity
+setmixerlightcolor
+setmixerlightexponent
+setmixerlightradius
+setmixerlightfovrange
+setmixerlightrotatetime
+setmixerspinmodels
+setmixerlightmodels
+getentnum
+getentitynumber
+setmodel
+setscale
+settargethighlight
+attach
+istouching
+getspeed
+getvelocity
+underwater
+islocalplayer
+hasdobj
+setcompassicon
+launchragdoll
+show
+hide
+setmaterialoverride
+clearmaterialoverride
+setsteptriggersound
+clearsteptriggersound
+getmovementtype
+isinsideheightlock
+isgrenadedud
+getcharacterindex
+linkto
+unlink
+islocalplayerviewlinked
+getthrottle
+getbrake
+getmaxspeed
+getsteering
+getmaxreversespeed
+islocalclientdriver
+getlocalclientdriver
+getwheelsurface
+ispeelingout
+iswheelsliding
+iswheelcolliding
+getlocalgunnerangles
+setstunned
+isdriving
+rotatepitch
+rotateyaw
+rotateroll
+rotateto
+moveto
+movegravity
+movex
+movey
+movez
+rotatevelocity
+playrumbleonentity
+playrumblelooponentity
+stoprumble
+startpoisoning
+stoppoisoning
+ispoisoned
+setwatchstyle
+getstance
+getweaponposfrac
+getcontrollertype
+getwiiuremotepointerposition
+islocalplayerweaponviewonlylinked
+getcampos
+getcamangles
+useanimtree
+hasanimtree
+clearanim
+clearanimlimited
+setanim
+setanimlimited
+setanimrestart
+setanimlimitedrestart
+setflaggedanim
+setflaggedanimlimited
+setflaggedanimrestart
+setflaggedanimlimitedrestart
+animscripted
+animflaggedscripted
+setanimknob
+setanimknoblimited
+setanimknobrestart
+setanimknoblimitedrestart
+setanimknoball
+setanimknoballlimited
+setanimknoballrestart
+setanimknoballlimitedrestart
+setflaggedanimknob
+setflaggedanimknoblimited
+setflaggedanimknobrestart
+setflaggedanimknoblimitedrestart
+setflaggedanimknoball
+setflaggedanimknoballrestart
+getanimtime
+setanimtime
+getanimcurrframecount
+setentityanimrate
+getentityanimrate
+animgetchildat
+animgetnumchildren
+map_material
+set_filter_pass_material
+set_filter_pass_enabled
+set_filter_pass_quads
+set_filter_pass_constant
+set_filter_bit_flag
+set_overlay_enabled
+set_overlay_material
+set_overlay_constant
+setinfraredvisionset
+setsonarenabled
+forceinfraredmaterialsstreaming
+setambienttrigger
+geteye
+geteyeapprox
+getlocalclientnumber
+mapshaderconstant
+setshaderconstant
+setviewmodelrenderflag
+cincaptureenablealpha
+cincapturedisablealpha
+setforcenotsimple
+giveweapon
+updateweaponoptions
+setblockweaponpickup
+calcweaponoptions
+calcplayeroptions
+setplayerrenderoptions
+nextplayerrenderoption
+bbclasschoice
+sethighlighted
+takeweapon
+forcegrenadethrow
+isfiring
+isreloading
+takeallweapons
+isinmovemode
+getcurrentweapon
+getcurrentweaponspinlerp
+setcurrentweaponspinlerp
+getcurrentweaponaltweapon
+isweaponoverheating
+setweaponoverheating
+getcurrentoffhand
+isusingoffhand
+forceoffhandend
+hasweapon
+switchtoweapon
+switchtoweaponimmediate
+switchtooffhand
+weaponplayejectbrass
+getlockonradius
+getlockonspeed
+givestartammo
+givemaxammo
+getfractionstartammo
+getfractionmaxammo
+setweaponheatpercent
+setorigin
+setvelocity
+setplayerangles
+getplayerangles
+getgunangles
+getplayercamerapos
+cameraactivate
+camerasetposition
+camerasetlookat
+gamepadusedlast
+usebuttonpressed
+changeseatbuttonpressed
+attackbuttonpressed
+actionslotonebuttonpressed
+actionslottwobuttonpressed
+actionslotthreebuttonpressed
+actionslotfourbuttonpressed
+adsbuttonpressed
+throwbuttonpressed
+meleebuttonpressed
+jumpbuttonpressed
+stancebuttonpressed
+fragbuttonpressed
+secondaryoffhandbuttonpressed
+inventorybuttonpressed
+sprintbuttonpressed
+sprintuprequired
+playerads
+pingplayer
+setviewmodel
+getviewmodel
+setoffhandsecondaryclass
+getoffhandsecondaryclass
+setoffhandprimaryclass
+beginlocationselection
+beginlocationairstrikeselection
+beginlocationmortarselection
+beginlocationartilleryselection
+beginlocationcomlinkselection
+beginlocationnapalmselection
+endlocationselection
+weaponlockstart
+weaponlockfinalize
+weaponlockfree
+weaponlocktargettooclose
+weaponlocknoclearance
+buttonpressed
+giveweaponnextattachment
+givenextbaseweapon
+getnormalizedmovement
+getnormalizedcameramovement
+sayall
+sayteam
+setspawnweapon
+initialweaponraise
+seteverhadweaponall
+dropitem
+dropscavengeritem
+hasagrenadepulledback
+finishplayerdamage
+finishmeleehit
+reviveplayer
+undolaststand
+Suicide():Commit Suicide:Does the maximum possible damage to an entity
+turnedhuman
+isremotecontrolling
+isweaponviewonlylinked
+allowstand
+allowcrouch
+allowprone
+allowlean
+getvehicleoccupied
+getfriendlies
+getenemies
+openmenu
+openmenunomouse
+closemenu
+closeingamemenu
+freezecontrols
+freezecontrolsallowlook
+arecontrolsfrozen
+disableusability
+enableusability
+disableweapons
+enableweapons
+disabledeathstreak
+enabledeathstreak
+deathstreakactive
+disableoffhandweapons
+enableoffhandweapons
+disableweaponcycling
+enableweaponcycling
+revive
+setlaststandprevweap
+setchannelvolumes
+deactivatechannelvolumes
+setweaponammoclip
+setweaponammostock
+setweaponammofuel
+getweaponammostock
+getweaponammofuel
+anyammoforweaponmodes
+iprintln
+setentertime
+cloneplayer
+setclientfov
+setclientthirdperson
+setclientthirdpersonangle
+setclientcompass
+setclientscriptmainmenu
+setclientcgobjectivetext
+setclientplayersprinttime
+setclientnumlives
+setclientdrawtalk
+setclientammocounterhide
+setclientminiscoreboardhide
+setclienthudhardcore
+setclientplayerpushamount
+setclientaimlockonpitchstrength
+setclientuivisibilityflag
+setclientprofilevar
+playclientairstrike
+playclientnapalm
+setcurrentspectatorclient
+relinktoturret
+carryturret
+stopcarryturret
+iscarryingturret
+canplayerplaceturret
+setplacementhint
+linkguidedmissilecamera
+unlinkguidedmissilecamera
+gpsjammeractive
+gpsjammerinactive
+spawnprotectionactive
+spawnprotectioninactive
+dualgrenadesactive
+dualgrenadesinactive
+linktomissile
+unlinkfrommissile
+canplaceriotshield
+setheldweaponmodel
+setriotshieldfailhint
+canplayerplacevehicle
+remotecontrolturret
+remotecontrolturretoff
+recordkillstreakevent
+recordkillstreakendevent
+recordgameevent
+recordkillmodifier
+recordmedal
+recordloadoutandperks
+recordloadoutperksandkillstreaks
+recordmultikill
+incrementlifestat
+incrementplayerstat
+recordplayerdeathzombies
+recordplayerdownzombies
+recordplayerrevivezombies
+recordzombiezone
+islookingat
+playlocalsound
+IsTalking():isTalking:Returns true if the player is talking via voice chat
+allowspectateteam
+getguid
+getxuid
+IsHost():IsHost:Returns true if the player is host
+islocaltohost
+AllowADS( value ):AllowADS:Allows you to ADS depending on the 'value'
+AllowJump( value ):AllowJump:Allows you to jump depending on the 'value'
+AllowSprint( value ):AllowSprint:Allows you to sprint depending on the 'value'
+AllowMelee( value ):AllowMelee:Allows you to melee depending on the 'value'
+forceslick
+setsprintduration
+setsprintcooldown
+setspreadoverride
+resetspreadoverride
+setactionslot
+getinventoryweapon
+setinventoryweapon
+getweaponslist
+getweaponslistprimaries
+startrevive
+stoprevive
+applyknockback
+SetPerk( perk_name ):setPerk:Gives the 'perk name' to the player
+HasPerk( perk_name ):hasPerk:Returns true if the player has the perk
+GetPerks():getPerks:Returns a list of perks a player has
+ClearPerks():clearPerks:Removes all perks from a player
+UnsetPerk( perk_name ):unsetPerk:Takes the specified perk from the player
+hasdlcavailable
+setrank
+EnableInvulnerability():Enable Godmode:Applies infinite health to the target entity
+DisableInvulnerability():Disable Godmode:Disables infinite health for the target entity
+enableafterlife
+disableafterlife
+addgoal
+cancelgoal
+atgoal
+hasgoal
+getgoal
+pressusebutton
+pressattackbutton
+pressdtpbutton
+throwgrenade
+getlookaheaddist
+getlookaheaddir
+lookat
+clearlookat
+allowattack
+pressads
+pressmelee
+getthreats
+predictposition
+botsighttracepassed
+botsetfailsafenode
+botsetdefaultclass
+botclassadditem
+botclasssetweaponoption
+botclassaddattachment
+botleavegame
+isplayeronsamemachine
+playerknockback
+getplayerviewheight
+ishostforbots
+murderline
+setoffhandvisible
+fakedamagefrom
+getsnapshotackindex
+getleagueteamid
+zbarriersupportszombietaunts
+zbarriersupportszombiereachthroughattacks
+getzbarriertauntanimstate
+getzbarrierreachthroughattackanimstate
+getzbarriernumattackslots
+getzbarrierattackslothorzoffset
+setzbarriercolmodel
+getweaponoptic

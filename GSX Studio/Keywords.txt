@@ -1,0 +1,61 @@
+self:Self:The caller of the current function
+anim:Anim:The animation of the caller
+level:Level:The level global entity
+game:Game:The game global entity
+player:Player:A player entity
+return:Return:Exits the function here. Can return a value if specified
+thread:Thread:Runs the function simultaneously with the rest of the code in the calling code
+goto:Goto:Jumps to the specified label
+break:Break:Exits the current loop
+this:This:References the current scope of code
+abort:Abort:Resets the error level of the current script
+continue:Continue:Skips the rest of the code in the current iteration of the loop
+if:if:If the following expression is true, executes the code in the code block
+else:else:Executes code if the expression in the if statement is false
+for:for:For loop
+foreach:foreach:Performs the code block for each item in the collection
+while:while:Performs the code block while the expression is true
+do:do:do keyword
+forever:forever:Performs the code block indefinitely
+delete:delete:Delete an entity or variable
+destroy:destroy:Destroy a HUD Element
+field:field:References the current structures fields
+new:new:Creates a new instance of the structure specified
+wait:wait:Waits the specified time in seconds
+realwait:realwait:Waits the specified time in seconds
+waittillframeend:wtfe:Waits until the current graphical frame has finished processing queued commands
+construct:construct:Defines the constructor method of the current structure
+destruct:construct:Defines the destructor method of the current structure
+switch:switch:Switch block
+case:case:Specifies an operation to execute when the parameter of the switch matches the case expression
+default:default:Specifies the operation to execute in the event that no other case is satisfied
+struct:struct:Specifies a definition of a structure
+watermark:watermark:Returns the default watermark string
+waittill_any:waittill_any:Waits until any of the parameter conditions are met
+waittill:waittill:Waits until the string parameter is notified
+endon:endon:Ends the execution of the current function in the event that this string is notified
+notify:notify:Notifies the object of a string message with optional parameters
+in:in:in keyword
+true:true:True value (1)
+false:false:False value (0)
+undefined:undefined:Undefined value. Equivalent to nullptr
+libraries:libraries:Your libraries folder
+on:on:on
+off:off:off
+context:context:Specifies that the compiler will try to hold this rule true when possible, and will ignore when not necessary
+returns:returns:Specifies that the compiler should only hold type rules to function returns
+all:all:all
+Description(""):Description:Description of a function
+Inline:Inline:Always inline this function
+NoInline:NoInline:Never inline this function
+Override:Override:This function is overwriting a function in the gsc script being overwritten
+float:float:Floating point decimal number
+number:number:Number value
+string:string:Text
+void:void:Anything
+int:int:Integer value
+hudelem:hudelem:HUD Element
+vector:vector:3 Value Vector
+array:array:Array of items
+animtrees:animtrees:The included anim trees list
+define:define:Define a global constant

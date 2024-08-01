@@ -1,0 +1,287 @@
+//SetInt
+stdu %r1, -0x80(%r1)
+mflr %r0
+std %r0, 0x0090(%r1)
+li %r3, 0
+li %r4, 0
+bla 0x824AF668
+mr %r30, %r3
+li %r3, 0
+li %r4, 1
+bla 0x824AF668
+stw %r3, 0(%r30)
+ld %r0, 0x90(%r1)
+mtlr %r0
+ld %r31, 0x78(%r1)
+addi %r1, %r1, 0x80
+blr
+
+//GetInt
+stdu %r1, -0x80(%r1)
+mflr %r0
+std %r0, 0x0090(%r1)
+li %r3, 0
+li %r4, 0
+bl 0x824AF668
+mr %r4, %r3
+lwz %r4, 0x0(%r4)
+li %r3, 0
+bl 0x824A9A30
+ld %r0, 0x90(%r1)
+mtlr %r0
+addi %r1, %r1, 0x80
+blr
+
+ps3: 0x00D494B8
+
+
+//SetInt x86
+push ebp
+mov ebp, esp
+push 0x0
+push 0x0
+mov ecx, 0x5BEEF0
+call ecx
+pop ebx
+pop ebx
+push eax
+push 0x1
+push 0x0
+mov ecx, 0x5BEEF0
+call ecx
+pop ebx
+pop ebx
+pop ebx
+mov [ebx],eax
+pop ebp
+ret 
+
+//GetInt x86
+push ebp
+mov ebp, esp
+push 0
+push 0
+mov ecx, 0x5BEEF0
+call ecx
+pop edx
+pop edx
+push [eax]
+push 0
+mov ecx, 0x441700
+call ecx
+pop edx
+pop edx
+pop ebp
+ret
+
+
+//SetByte
+stdu %r1, -0x80(%r1)
+mflr %r0
+std %r0, 0x0090(%r1)
+li %r3, 0
+li %r4, 0
+bl 0x824AF668
+mr %r30, %r3
+li %r3, 0
+li %r4, 1
+bl 0x824AF668
+stb %r3, 0(%r30)
+ld %r0, 0x90(%r1)
+mtlr %r0
+ld %r31, 0x78(%r1)
+addi %r1, %r1, 0x80
+blr
+
+//GetByte
+stdu %r1, -0x80(%r1)
+mflr %r0
+std %r0, 0x0090(%r1)
+li %r3, 0
+li %r4, 0
+bl 0x824AF668
+mr %r4, %r3
+lbz %r4, 0x0(%r4)
+li %r3, 0
+bl 0x824A9A30
+ld %r0, 0x90(%r1)
+mtlr %r0
+addi %r1, %r1, 0x80
+blr
+
+
+//SetByte x86
+push ebp
+mov ebp, esp
+push 0x0
+push 0x0
+mov ecx, 0x5beef0
+call ecx
+pop ebx
+pop ebx
+push eax
+push 0x1
+push 0x0
+mov ecx, 0x5beef0
+call ecx
+pop ebx
+pop ebx
+pop ebx
+mov byte ptr [ebx], eax
+pop ebp
+ret 
+
+//GetByte x86
+push ebp
+mov ebp, esp
+push 0
+push 0
+mov ecx, 0x5beef0
+call ecx
+pop edx
+pop edx
+movzx edx, BYTE PTR [eax]
+push edx
+push 0
+mov ecx, 0x441700
+call ecx
+pop edx
+pop edx
+pop ebp
+ret
+
+
+//SetFloat x86
+push ebp
+mov ebp, esp
+push 0x0
+push 0x0
+mov ecx, SCR_GetInt
+call ecx
+pop ebx
+pop ebx
+push eax
+push 0x1
+push 0x0
+mov ecx, SCR_GetFloat
+call ecx
+pop ebx
+pop ebx
+pop ebx
+fstp DWORD PTR[ebx]
+pop ebp
+ret 
+
+//GetFloat x86
+push ebp
+mov ebp, esp
+push 0
+push 0
+mov ecx, SCR_GetInt
+call ecx
+pop edx
+pop edx
+push [eax]
+push 0
+mov ecx, SCR_AddFloat
+call ecx
+pop edx
+pop edx
+pop ebp
+ret
+
+//SetFloat Ps3
+stdu %r1, -0x80(%r1)
+mflr %r0
+std %r0, 0x0090(%r1)
+li %r3, 0
+li %r4, 0
+bla SCR_GETINT
+mr %r30, %r3
+li %r3, 0
+li %r4, 1
+bla SCR_GETFLOAT
+stfs %f1, 0(%r30)
+ld %r0, 0x90(%r1)
+mtlr %r0
+ld %r31, 0x78(%r1)
+addi %r1, %r1, 0x80
+blr
+
+//GetFloat Ps3
+stdu %r1, -0x80(%r1)
+mflr %r0
+std %r0, 0x0090(%r1)
+li %r3, 0
+li %r4, 0
+bla SCR_GETINT
+mr %r4, %r3
+lfs %f1, 0x0(%r4)
+li %r3, 0
+bla SCR_AddFloat
+ld %r0, 0x90(%r1)
+mtlr %r0
+addi %r1, %r1, 0x80
+blr
+
+//IsRedacted x86
+push ebp
+mov ebp, esp
+push IS_REDACTED
+push 0
+mov ecx, SCR_AddInt
+call ecx
+pop edx
+pop edx
+pop ebp
+ret
+
+
+//IsRedacted PPC
+stdu %r1, -0x80(%r1)
+mflr %r0
+std %r0, 0x0090(%r1)
+li %r3, 0
+li %r4, 0
+li %r12, 0
+lis %r12, SCR_AddInt_HIGHHALF
+ori %r12, %r12, SCR_AddInt_LOWHALF
+mtctr %r12
+bctrl 
+ld %r0, 0x90(%r1)
+mtlr %r0
+addi %r1, %r1, 0x80
+blr
+
+/*
+ ps3::SCR_GetInt		=	0x4a34b4
+ ps3::SCR_AddInt		=	0x4a4fe8
+ ps3::SCR_GetFloat		=	0x4A3B90
+ ps3::SCR_AddFloat		=	0x4A5084
+ xb360::SCR_GetInt		=	0x824AF668
+ xb360::SCR_AddInt		=	0x824A9A30
+ xb360::SCR_GetFloat	=	0x824A2280
+ xb360::SCR_AddFloat	=	0x824A9A90
+ rmp::SCR_GetInt		=	0x45D840
+ rmp::SCR_AddInt		=	0x57AFF0
+ rmp::SCR_GetFloat		= 	0x633400
+ rmp::SCR_AddFloat		= 	0x579130
+ rzm::SCR_GetInt		=	0x49a060
+ rzm::SCR_AddInt		=	0x643a40
+ rzm::SCR_GetFloat		=	0x625EE0
+ rzm::SCR_AddFloat		=	0x503480
+ smp::SCR_GetInt		=	0x4e5920
+ smp::SCR_AddInt		=	0x523b50
+ smp::SCR_GetFloat		=	0x581E50
+ smp::SCR_AddFloat		=	0x6025A0
+ szm::SCR_GetInt		=	0x5beef0
+ szm::SCR_AddInt		=	0x441700
+ szm::SCR_GetFloat		=	0x59EF90
+ szm::SCR_AddFloat		=	0x4E3500
+ 
+ SetInt::addargus
+ GetInt::removeargus
+ SetByte::forceyellowdot
+ GetByte::disableyellowdot
+ 
+*/

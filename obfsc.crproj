@@ -1,0 +1,48 @@
+<project outputDir="C:\Users\A\Desktop\GSX Studio\Release\Confused" baseDir="C:\Users\A\Desktop\GSX Studio\Release" xmlns="http://confuser.codeplex.com">
+  <module path="FastColoredTextBox.dll" snKey="C:\Users\A\Desktop\FastColoredTextBox-master\FastColoredTextBox\FCTB_key.snk">
+    <rule pattern="true" inherit="false">
+      <protection id="anti ildasm" />
+      <protection id="rename" />
+      <protection id="ctrl flow" />
+      <protection id="anti debug" />
+      <protection id="resources" />
+      <protection id="invalid metadata" />
+      <protection id="constants" />
+      <protection id="ref proxy" />
+    </rule>
+  </module>
+  <module path="GSX Studio.exe">
+    <rule pattern="true" inherit="false">
+      <protection id="anti ildasm" />
+      <protection id="rename" />
+      <protection id="ctrl flow" />
+      <protection id="anti debug" />
+      <protection id="resources" />
+      <protection id="invalid metadata" />
+      <protection id="constants" />
+      <protection id="ref proxy" />
+    </rule>
+  </module>
+  <module path="GSXCompilerLib.dll" snKey="C:\Users\A\Desktop\GSX Studio\GSXCompilerLib\GSXCompilerLibSig.pfx" snKeyPass="@Nth0nythingrules">
+    <rule pattern="true" inherit="false">
+      <protection id="anti ildasm" />
+      <protection id="rename" />
+      <protection id="resources" />
+      <protection id="ref proxy" />
+      <protection id="invalid metadata" />
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+      <protection id="anti debug" />
+    </rule>
+  </module>
+  <module path="Irony.dll" snKey="C:\Users\A\Desktop\Irony_2013_12_12\Irony\irony.snk">
+    <rule pattern="true" inherit="false">
+      <protection id="anti ildasm" />
+      <protection id="ref proxy" />
+      <protection id="constants" />
+      <protection id="anti debug" />
+      <protection id="invalid metadata" />
+      <protection id="ctrl flow" />
+    </rule>
+  </module>
+</project>

@@ -1,0 +1,33 @@
+#include maps\mp\_utility;
+#include common_scripts\utility;
+#include maps\mp\gametypes_zm\_hud_util;
+#include maps\mp\gametypes_zm\_hud_message;
+
+/*
+	Project Information:
+	{
+		Creator: {CREATOR_NAME}
+		Project Name: {PROJECT_NAME}
+	}
+*/
+
+
+Init()
+{
+	level thread OnPlayerConnect();
+}
+
+OnPlayerConnect()
+{
+	while(1)
+	{
+		level waittill("connected", player);
+		player thread OnSpawned();
+	}
+}
+
+OnSpawned()
+{
+	self waittill("spawned_player");
+	self iprintln("GSX Studio");
+}

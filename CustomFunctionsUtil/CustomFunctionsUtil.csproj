@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CCD88BB-32D7-44B2-8540-6FAC2B0D4F76}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CustomFunctionsUtil</RootNamespace>
+    <AssemblyName>CustomFunctionsUtil</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EmbeddedResource Include="ps3_getint.bin" />
+    <EmbeddedResource Include="ps3_setint.bin" />
+    <EmbeddedResource Include="redacted_mp_getint.bin" />
+    <EmbeddedResource Include="redacted_mp_setint.bin" />
+    <EmbeddedResource Include="redacted_zm_getint.bin" />
+    <EmbeddedResource Include="redacted_zm_setint.bin" />
+    <EmbeddedResource Include="steam_mp_getint.bin" />
+    <EmbeddedResource Include="steam_mp_setint.bin" />
+    <EmbeddedResource Include="steam_zm_getint.bin" />
+    <EmbeddedResource Include="steam_zm_setint.bin" />
+    <EmbeddedResource Include="xb360_getint.bin" />
+    <EmbeddedResource Include="xb360_setint.bin" />
+    <EmbeddedResource Include="ps3_getbyte.bin" />
+    <EmbeddedResource Include="ps3_setbyte.bin" />
+    <EmbeddedResource Include="xb360_getbyte.bin" />
+    <EmbeddedResource Include="xb360_setbyte.bin" />
+    <EmbeddedResource Include="redacted_mp_getbyte.bin" />
+    <EmbeddedResource Include="redacted_mp_setbyte.bin" />
+    <EmbeddedResource Include="redacted_zm_getbyte.bin" />
+    <EmbeddedResource Include="redacted_zm_setbyte.bin" />
+    <EmbeddedResource Include="steam_mp_getbyte.bin" />
+    <EmbeddedResource Include="steam_mp_setbyte.bin" />
+    <EmbeddedResource Include="steam_zm_getbyte.bin" />
+    <EmbeddedResource Include="steam_zm_setbyte.bin" />
+    <EmbeddedResource Include="redacted_mp_getfloat.bin" />
+    <EmbeddedResource Include="redacted_mp_setfloat.bin" />
+    <EmbeddedResource Include="redacted_zm_getfloat.bin" />
+    <EmbeddedResource Include="redacted_zm_setfloat.bin" />
+    <EmbeddedResource Include="steam_mp_getfloat.bin" />
+    <EmbeddedResource Include="steam_mp_setfloat.bin" />
+    <EmbeddedResource Include="steam_zm_getfloat.bin" />
+    <EmbeddedResource Include="steam_zm_setfloat.bin" />
+    <EmbeddedResource Include="ps3_getfloat.bin" />
+    <EmbeddedResource Include="ps3_setfloat.bin" />
+    <EmbeddedResource Include="xb360_getfloat.bin" />
+    <EmbeddedResource Include="xb360_setfloat.bin" />
+    <EmbeddedResource Include="redacted_mp_isredacted.bin" />
+    <EmbeddedResource Include="redacted_mp_rpc.bin" />
+    <EmbeddedResource Include="redacted_zm_isredacted.bin" />
+    <EmbeddedResource Include="redacted_zm_rpc.bin" />
+    <EmbeddedResource Include="steam_mp_isredacted.bin" />
+    <EmbeddedResource Include="steam_mp_rpc.bin" />
+    <EmbeddedResource Include="steam_zm_isredacted.bin" />
+    <EmbeddedResource Include="steam_zm_rpc.bin" />
+    <EmbeddedResource Include="ps3_isredacted.bin" />
+    <EmbeddedResource Include="ps3_rpc.bin" />
+    <EmbeddedResource Include="xb360_isredacted.bin" />
+    <EmbeddedResource Include="xb360_rpc.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GSXCompilerLib\GSXCompilerLib.csproj">
+      <Project>{a75510d3-685f-4957-b72e-2f527be98096}</Project>
+      <Name>GSXCompilerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

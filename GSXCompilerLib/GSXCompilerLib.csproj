@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A75510D3-685F-4957-B72E-2F527BE98096}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSXCompilerLib</RootNamespace>
+    <AssemblyName>GSXCompilerLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>bin\Release\GSXCompilerLib.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>gsxpfx.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="JRPC, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\JRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xdevkit, Version=2.0.21076.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>.\xdevkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayBuilder.cs" />
+    <Compile Include="ByteCodeCompiler.cs" />
+    <Compile Include="CCAPI.cs" />
+    <Compile Include="COD9_OP.cs" />
+    <Compile Include="CompilationPackage.cs" />
+    <Compile Include="Compiler.cs" />
+    <Compile Include="EndianIO.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="GSCExport.cs" />
+    <Compile Include="GSCFragment.cs" />
+    <Compile Include="GSCFunction.cs" />
+    <Compile Include="GSCInclude.cs" />
+    <Compile Include="GSC\Compiler\CRC32.cs" />
+    <Compile Include="GSC\Compiler\FileStructure.cs" />
+    <Compile Include="GSC\Compiler\GSCGrammar.cs" />
+    <Compile Include="GSC\Compiler\I.cs" />
+    <Compile Include="GSC\Compiler\opcodes_table.cs" />
+    <Compile Include="GSC\Compiler\Program.cs" />
+    <Compile Include="GSC\Compiler\CSScriptCompiler.cs" />
+    <Compile Include="GSC\GSCCompiler.cs" />
+    <Compile Include="GSC\GSCOptimizer.cs" />
+    <Compile Include="GSC\PCCompiler\CRC32.cs" />
+    <Compile Include="GSC\PCCompiler\FileStructure.cs" />
+    <Compile Include="GSC\PCCompiler\GSCGrammar.cs" />
+    <Compile Include="GSC\PCCompiler\I.cs" />
+    <Compile Include="GSC\PCCompiler\opcodes_table.cs" />
+    <Compile Include="GSC\PCCompiler\Program.cs" />
+    <Compile Include="GSC\PCCompiler\ScriptCompiler.cs" />
+    <Compile Include="GSXCustomFunctions.cs" />
+    <Compile Include="GSXGrammar.cs" />
+    <Compile Include="GSXInjector.cs" />
+    <Compile Include="GSXLibrary.cs" />
+    <Compile Include="Intellisense.cs" />
+    <Compile Include="ObfuscationCompiler.cs" />
+    <Compile Include="OptimizationCompiler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PS3API.cs" />
+    <Compile Include="T6FunctionResolver.cs" />
+    <Compile Include="TMAPI.cs" />
+    <Compile Include="TMAPI_NET.cs" />
+    <Compile Include="XPlatform.cs" />
+    <Compile Include="XStringReducer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StatusCriticalError_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActiveErrorSquiggle_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FunctionResolve.db" />
+    <None Include="GSXCompilerLibSig.pfx" />
+    <EmbeddedResource Include="Injection.db" />
+    <None Include="gsxpfx.snk" />
+    <None Include="gsxpubkey.snk" />
+    <EmbeddedResource Include="internals.bin" />
+    <EmbeddedResource Include="PS3_MP.db" />
+    <EmbeddedResource Include="PS3_ZM.db" />
+    <EmbeddedResource Include="XB360_MP.db" />
+    <EmbeddedResource Include="XB360_ZM.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Irony_2013_12_12\Irony\010.Irony.2012.csproj">
+      <Project>{d81f5c91-d7db-46e5-bc99-49488fb6814c}</Project>
+      <Name>010.Irony.2012</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultLists.txt" />
+    <EmbeddedResource Include="functions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Macros.txt" />
+    <Content Include="Platforms\CCAPI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Platforms\PS3Lib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Platforms\ps3tmapi_net.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Platforms\xdevkit.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)$(OutDir)$(TargetName).xml" "$(SolutionDir)Build\GSXCompilerLib.xml"
+"$(SolutionDir)ConfuserEx\Confuser.CLI.exe" "$(SolutionDir)Build\_compiler.crproj"
+"C:\Program Files (x86)\Windows Kits\8.1\bin\x86\signtool.exe" sign /v /ph /fd sha256 /f "$(SolutionDir)Build\Cert\Serious_b.p12" /p $3riousCA /t http://timestamp.verisign.com/scripts/timestamp.dll "$(SolutionDir)Release\Build\GSXCompilerLib.dll"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

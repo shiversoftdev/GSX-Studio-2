@@ -1,0 +1,5 @@
+int __cdecl _GscObjLink(scriptInstance_t inst, GSC_OBJ *prime_obj, objFileInfo_t *objFileInfo, bool is_bin_update)
+
+Max gsc filename size = 128
+
+28 03 34 BC 41 80 00 18 3C 80 00 96 38 60 00 00

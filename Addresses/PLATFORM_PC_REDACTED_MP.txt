@@ -1,0 +1,1344 @@
+Name: common_scripts/utility.gsc
+Pointer: 0X16D4210
+Buffer: 0X1049ED60
+Size: 0X62C1
+
+Name: codescripts/character_mp.gsc
+Pointer: 0X16D421C
+Buffer: 0X104A5040
+Size: 0X1DE
+
+Name: maps/mp/_pc.gsc
+Pointer: 0X16D4228
+Buffer: 0X104A59A0
+Size: 0X09A
+
+Name: maps/mp/_acousticsensor.gsc
+Pointer: 0X16D4234
+Buffer: 0X104A5A60
+Size: 0XDAB
+
+Name: maps/mp/_ambientpackage.gsc
+Pointer: 0X16D4240
+Buffer: 0X104A6840
+Size: 0X05C
+
+Name: maps/mp/_art.gsc
+Pointer: 0X16D424C
+Buffer: 0X104A68C0
+Size: 0X25D7
+
+Name: maps/mp/_audio.gsc
+Pointer: 0X16D4258
+Buffer: 0X104A8EC0
+Size: 0X839
+
+Name: maps/mp/_ballistic_knife.gsc
+Pointer: 0X16D4264
+Buffer: 0X104A9720
+Size: 0X1212
+
+Name: maps/mp/_bb.gsc
+Pointer: 0X16D4270
+Buffer: 0X104AA960
+Size: 0X65
+
+Name: maps/mp/_bouncingbetty.gsc
+Pointer: 0X16D4288
+Buffer: 0X104AB000
+Size: 0X127E
+
+Name: maps/mp/_burnplayer.gsc
+Pointer: 0X16D4294
+Buffer: 0X104AC2A0
+Size: 0X1E8E
+
+Name: maps/mp/_busing.gsc
+Pointer: 0X16D42A0
+Buffer: 0X104AE160
+Size: 0X196
+
+Name: maps/mp/_challenges.gsc
+Pointer: 0X16D42AC
+Buffer: 0X104AE320
+Size: 0X7EAD
+
+Name: maps/mp/_compass.gsc
+Pointer: 0X16D42B8
+Buffer: 0X104B6200
+Size: 0X58F
+
+Name: maps/mp/_createfx.gsc
+Pointer: 0X16D42C4
+Buffer: 0X104B67C0
+Size: 0XB962
+
+Name: maps/mp/_createfxmenu.gsc
+Pointer: 0X16D42D0
+Buffer: 0X104C2140
+Size: 0X39F6
+
+Name: maps/mp/_createfxundo.gsc
+Pointer: 0X16D42DC
+Buffer: 0X104C5B60
+Size: 0X1D72
+
+Name: maps/mp/_decoy.gsc
+Pointer: 0X16D42E8
+Buffer: 0X104C7900
+Size: 0X1A4D
+
+Name: maps/mp/_demo.gsc
+Pointer: 0X16D42F4
+Buffer: 0X104C9360
+Size: 0X8CA
+
+Name: maps/mp/_development_dvars.gsc
+Pointer: 0X16D4300
+Buffer: 0X104C9C60
+Size: 0X0A6
+
+Name: maps/mp/_destructible.gsc
+Pointer: 0X16D430C
+Buffer: 0X104C9D40
+Size: 0X1D4A
+
+Name: maps/mp/_empgrenade.gsc
+Pointer: 0X16D4318
+Buffer: 0X104CBAC0
+Size: 0XAC1
+
+Name: maps/mp/_entityheadicons.gsc
+Pointer: 0X16D4324
+Buffer: 0X104CC5A0
+Size: 0XA92
+
+Name: maps/mp/_explosive_bolt.gsc
+Pointer: 0X16D4330
+Buffer: 0X104CD060
+Size: 0X17D
+
+Name: maps/mp/_flashgrenades.gsc
+Pointer: 0X16D433C
+Buffer: 0X104CD200
+Size: 0XC1A
+
+Name: maps/mp/_fx.gsc
+Pointer: 0X16D4348
+Buffer: 0X104CDE40
+Size: 0X20AE
+
+Name: maps/mp/_fxanim.gsc
+Pointer: 0X16D4354
+Buffer: 0X104CFF20
+Size: 0X0AF
+
+Name: maps/mp/_gameadvertisement.gsc
+Pointer: 0X16D4360
+Buffer: 0X104D0000
+Size: 0X1E51
+
+Name: maps/mp/_gamerep.gsc
+Pointer: 0X16D436C
+Buffer: 0X104D1E80
+Size: 0X226A
+
+Name: maps/mp/_global_fx.gsc
+Pointer: 0X16D4378
+Buffer: 0X104D4120
+Size: 0X8D
+
+Name: maps/mp/_hacker_tool.gsc
+Pointer: 0X16D4384
+Buffer: 0X104D4960
+Size: 0X31CD
+
+Name: maps/mp/_heatseekingmissile.gsc
+Pointer: 0X16D4390
+Buffer: 0X104D7B60
+Size: 0X2735
+
+Name: maps/mp/_interactive_objects.gsc
+Pointer: 0X16D439C
+Buffer: 0X104DA2C0
+Size: 0X1A83
+
+Name: maps/mp/_load.gsc
+Pointer: 0X16D43A8
+Buffer: 0X104DBD60
+Size: 0X2D4
+
+Name: maps/mp/_medals.gsc
+Pointer: 0X16D43B4
+Buffer: 0X104DEA80
+Size: 0X2FE
+
+Name: maps/mp/_menus.gsc
+Pointer: 0X16D43C0
+Buffer: 0X104DEDA0
+Size: 0X06A
+
+Name: maps/mp/_mgturret.gsc
+Pointer: 0X16D43CC
+Buffer: 0X104DEE40
+Size: 0X12CD
+
+Name: maps/mp/_multi_extracam.gsc
+Pointer: 0X16D43D8
+Buffer: 0X104E0140
+Size: 0X076
+
+Name: maps/mp/_music.gsc
+Pointer: 0X16D43E4
+Buffer: 0X104E01E0
+Size: 0X1E2
+
+Name: maps/mp/_popups.gsc
+Pointer: 0X16D43F0
+Buffer: 0X104E03E0
+Size: 0X19F7
+
+Name: maps/mp/_riotshield.gsc
+Pointer: 0X16D43FC
+Buffer: 0X104E1E00
+Size: 0X2456
+
+Name: maps/mp/_satchel_charge.gsc
+Pointer: 0X16D4408
+Buffer: 0X104E4280
+Size: 0X62A
+
+Name: maps/mp/_sensor_grenade.gsc
+Pointer: 0X16D4414
+Buffer: 0X104E48E0
+Size: 0X1127
+
+Name: maps/mp/_scoreevents.gsc
+Pointer: 0X16D4420
+Buffer: 0X104E5A40
+Size: 0X38AE
+
+Name: maps/mp/_scrambler.gsc
+Pointer: 0X16D4438
+Buffer: 0X104E93A0
+Size: 0X1064
+
+Name: maps/mp/_script_gen.gsc
+Pointer: 0X16D4444
+Buffer: 0X104EA420
+Size: 0X1822
+
+Name: maps/mp/_smokegrenade.gsc
+Pointer: 0X16D4450
+Buffer: 0X104EBC60
+Size: 0X68D
+
+Name: maps/mp/_sticky_grenade.gsc
+Pointer: 0X16D445C
+Buffer: 0X104EC320
+Size: 0X17D
+
+Name: maps/mp/_tacticalinsertion.gsc
+Pointer: 0X16D4468
+Buffer: 0X104EC4C0
+Size: 0X20FA
+
+Name: maps/mp/_teargrenades.gsc
+Pointer: 0X16D4474
+Buffer: 0X104EE5E0
+Size: 0XC6D
+
+Name: maps/mp/_treadfx.gsc
+Pointer: 0X16D4480
+Buffer: 0X104EF280
+Size: 0XB9
+
+Name: maps/mp/_tabun.gsc
+Pointer: 0X16D448C
+Buffer: 0X104EFDA0
+Size: 0X2988
+
+Name: maps/mp/_trophy_system.gsc
+Pointer: 0X16D4498
+Buffer: 0X104F2760
+Size: 0X1CFB
+
+Name: maps/mp/_proximity_grenade.gsc
+Pointer: 0X16D44A4
+Buffer: 0X104F4480
+Size: 0X1CAE
+
+Name: maps/mp/_utility.gsc
+Pointer: 0X16D44B0
+Buffer: 0X104F6160
+Size: 0X93E
+
+Name: maps/mp/_vehicles.gsc
+Pointer: 0X16D44BC
+Buffer: 0X104FF4A0
+Size: 0X6DD1
+
+Name: maps/mp/gametypes/_battlechatter_mp.gsc
+Pointer: 0X16D44D4
+Buffer: 0X10506320
+Size: 0X4556
+
+Name: maps/mp/gametypes/_callbacksetup.gsc
+Pointer: 0X16D44E0
+Buffer: 0X1050A8A0
+Size: 0X1666
+
+Name: maps/mp/gametypes/_class.gsc
+Pointer: 0X16D44EC
+Buffer: 0X1050BF40
+Size: 0X5761
+
+Name: maps/mp/gametypes/_clientids.gsc
+Pointer: 0X16D44F8
+Buffer: 0X105116E0
+Size: 0X11B
+
+Name: maps/mp/gametypes/_copter.gsc
+Pointer: 0X16D4504
+Buffer: 0X10511820
+Size: 0X30A7
+
+Name: maps/mp/gametypes/_damagefeedback.gsc
+Pointer: 0X16D4510
+Buffer: 0X10514900
+Size: 0XAD3
+
+Name: maps/mp/gametypes/_deathicons.gsc
+Pointer: 0X16D451C
+Buffer: 0X10515400
+Size: 0X75E
+
+Name: maps/mp/gametypes/_dev.gsc
+Pointer: 0X16D4528
+Buffer: 0X10515B80
+Size: 0XCB44
+
+Name: maps/mp/gametypes/_dev_class.gsc
+Pointer: 0X16D4534
+Buffer: 0X10522700
+Size: 0X27E
+
+Name: maps/mp/gametypes/_friendicons.gsc
+Pointer: 0X16D4540
+Buffer: 0X10524E40
+Size: 0X79
+
+Name: maps/mp/gametypes/_gameobjects.gsc
+Pointer: 0X16D454C
+Buffer: 0X10525580
+Size: 0X8FE1
+
+Name: maps/mp/gametypes/_globalentities.gsc
+Pointer: 0X16D4558
+Buffer: 0X1052E5A0
+Size: 0X066
+
+Name: maps/mp/gametypes/_globallogic_actor.gsc
+Pointer: 0X16D4564
+Buffer: 0X1052E640
+Size: 0X1092
+
+Name: maps/mp/gametypes/_globallogic_audio.gsc
+Pointer: 0X16D4570
+Buffer: 0X1052F700
+Size: 0X48EE
+
+Name: maps/mp/gametypes/_globallogic_defaults.gsc
+Pointer: 0X16D457C
+Buffer: 0X10534020
+Size: 0X1611
+
+Name: maps/mp/gametypes/_globallogic_player.gsc
+Pointer: 0X16D4588
+Buffer: 0X10535660
+Size: 0XC83E
+
+Name: maps/mp/gametypes/_globallogic_score.gsc
+Pointer: 0X16D4594
+Buffer: 0X10541EE0
+Size: 0X5AB9
+
+Name: maps/mp/gametypes/_globallogic_spawn.gsc
+Pointer: 0X16D45A0
+Buffer: 0X105479E0
+Size: 0X3982
+
+Name: maps/mp/gametypes/_globallogic_ui.gsc
+Pointer: 0X16D45AC
+Buffer: 0X1054B3A0
+Size: 0X2862
+
+Name: maps/mp/gametypes/_globallogic_utils.gsc
+Pointer: 0X16D45B8
+Buffer: 0X1054DC40
+Size: 0X1B76
+
+Name: maps/mp/gametypes/_globallogic_vehicle.gsc
+Pointer: 0X16D45C4
+Buffer: 0X1054F800
+Size: 0X1A25
+
+Name: maps/mp/gametypes/_healthoverlay.gsc
+Pointer: 0X16D45D0
+Buffer: 0X10551260
+Size: 0XD13
+
+Name: maps/mp/gametypes/_hostmigration.gsc
+Pointer: 0X16D45DC
+Buffer: 0X10551FA0
+Size: 0X1489
+
+Name: maps/mp/gametypes/_hud.gsc
+Pointer: 0X16D45E8
+Buffer: 0X10553460
+Size: 0XDC7
+
+Name: maps/mp/gametypes/_hud_message.gsc
+Pointer: 0X16D45F4
+Buffer: 0X10554260
+Size: 0X5797
+
+Name: maps/mp/gametypes/_hud_util.gsc
+Pointer: 0X16D4600
+Buffer: 0X10559A20
+Size: 0X3D12
+
+Name: maps/mp/gametypes/_killcam.gsc
+Pointer: 0X16D460C
+Buffer: 0X1055D760
+Size: 0X2F32
+
+Name: maps/mp/gametypes/_menus.gsc
+Pointer: 0X16D4618
+Buffer: 0X105606C0
+Size: 0XEE5
+
+Name: maps/mp/gametypes/_objpoints.gsc
+Pointer: 0X16D4624
+Buffer: 0X105615E0
+Size: 0X97A
+
+Name: maps/mp/gametypes/_perplayer.gsc
+Pointer: 0X16D4630
+Buffer: 0X10561F80
+Size: 0X9D8
+
+Name: maps/mp/gametypes/_persistence.gsc
+Pointer: 0X16D463C
+Buffer: 0X10562980
+Size: 0X29B
+
+Name: maps/mp/gametypes/_rank.gsc
+Pointer: 0X16D4648
+Buffer: 0X105652C0
+Size: 0X3B66
+
+Name: maps/mp/gametypes/_scoreboard.gsc
+Pointer: 0X16D4654
+Buffer: 0X10568E60
+Size: 0X1D2
+
+Name: maps/mp/gametypes/_serversettings.gsc
+Pointer: 0X16D4660
+Buffer: 0X10569060
+Size: 0XC4D
+
+Name: maps/mp/gametypes/_shellshock.gsc
+Pointer: 0X16D466C
+Buffer: 0X10569CE0
+Size: 0X4AE
+
+Name: maps/mp/gametypes/_spawning.gsc
+Pointer: 0X16D4678
+Buffer: 0X1056A1C0
+Size: 0X77E1
+
+Name: maps/mp/gametypes/_spawnlogic.gsc
+Pointer: 0X16D4684
+Buffer: 0X105719E0
+Size: 0X6EC2
+
+Name: maps/mp/gametypes/_spectating.gsc
+Pointer: 0X16D4690
+Buffer: 0X105788E0
+Size: 0XCA9
+
+Name: maps/mp/gametypes/_tweakables.gsc
+Pointer: 0X16D469C
+Buffer: 0X105795C0
+Size: 0X1AFA
+
+Name: maps/mp/gametypes/_wager.gsc
+Pointer: 0X16D46A8
+Buffer: 0X1057B0E0
+Size: 0X3E3D
+
+Name: maps/mp/gametypes/_weapon_utils.gsc
+Pointer: 0X16D46B4
+Buffer: 0X1057EF60
+Size: 0X5FA
+
+Name: maps/mp/gametypes/_weapons.gsc
+Pointer: 0X16D46C0
+Buffer: 0X1057F580
+Size: 0X80F8
+
+Name: maps/mp/gametypes/_weaponobjects.gsc
+Pointer: 0X16D46CC
+Buffer: 0X105876A0
+Size: 0X9F21
+
+Name: maps/mp/gametypes/conf.gsc
+Pointer: 0X16D46D8
+Buffer: 0X105915E0
+Size: 0X3149
+
+Name: maps/mp/gametypes/ctf.gsc
+Pointer: 0X16D46E4
+Buffer: 0X10594760
+Size: 0X76F1
+
+Name: maps/mp/gametypes/dm.gsc
+Pointer: 0X16D46F0
+Buffer: 0X1059BE80
+Size: 0X1042
+
+Name: maps/mp/gametypes/dem.gsc
+Pointer: 0X16D46FC
+Buffer: 0X1059CEE0
+Size: 0X6D25
+
+Name: maps/mp/gametypes/dom.gsc
+Pointer: 0X16D4708
+Buffer: 0X105A3C20
+Size: 0X76DE
+
+Name: maps/mp/gametypes/gun.gsc
+Pointer: 0X16D4714
+Buffer: 0X105AB320
+Size: 0X271A
+
+Name: maps/mp/gametypes/hq.gsc
+Pointer: 0X16D4720
+Buffer: 0X105ADA60
+Size: 0X64BD
+
+Name: maps/mp/gametypes/oneflag.gsc
+Pointer: 0X16D472C
+Buffer: 0X105B3F40
+Size: 0X8095
+
+Name: maps/mp/gametypes/sas.gsc
+Pointer: 0X16D4738
+Buffer: 0X105BC000
+Size: 0X1C8E
+
+Name: maps/mp/gametypes/koth.gsc
+Pointer: 0X16D4744
+Buffer: 0X105BDCC0
+Size: 0X701
+
+Name: maps/mp/gametypes/oic.gsc
+Pointer: 0X16D4750
+Buffer: 0X105C4CE0
+Size: 0X1FA6
+
+Name: maps/mp/gametypes/sd.gsc
+Pointer: 0X16D475C
+Buffer: 0X105C6CA0
+Size: 0X5789
+
+Name: maps/mp/gametypes/shrp.gsc
+Pointer: 0X16D4768
+Buffer: 0X105CC460
+Size: 0X39A5
+
+Name: maps/mp/gametypes/tdm.gsc
+Pointer: 0X16D4774
+Buffer: 0X105CFE20
+Size: 0X18C2
+
+Name: clientscripts/mp/gametypes/conf.csc
+Pointer: 0X16D4780
+Buffer: 0X105D1720
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/ctf.csc
+Pointer: 0X16D478C
+Buffer: 0X105D1820
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/dm.csc
+Pointer: 0X16D4798
+Buffer: 0X105D1920
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/dem.csc
+Pointer: 0X16D47A4
+Buffer: 0X105D1A20
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/dom.csc
+Pointer: 0X16D47B0
+Buffer: 0X105D1B20
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/gun.csc
+Pointer: 0X16D47BC
+Buffer: 0X105D1C20
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/hq.csc
+Pointer: 0X16D47C8
+Buffer: 0X105D1D20
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/sas.csc
+Pointer: 0X16D47D4
+Buffer: 0X105D1E20
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/koth.csc
+Pointer: 0X16D47E0
+Buffer: 0X105D1F20
+Size: 0X6B1
+
+Name: clientscripts/mp/gametypes/oic.csc
+Pointer: 0X16D47EC
+Buffer: 0X105D2600
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/sd.csc
+Pointer: 0X16D47F8
+Buffer: 0X105D2700
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/shrp.csc
+Pointer: 0X16D4804
+Buffer: 0X105D2800
+Size: 0X0C6
+
+Name: clientscripts/mp/gametypes/tdm.csc
+Pointer: 0X16D4810
+Buffer: 0X105D2900
+Size: 0X0C6
+
+Name: maps/mp/gametypes/_pregame.gsc
+Pointer: 0X16D481C
+Buffer: 0X105D2A00
+Size: 0X1CC6
+
+Name: maps/mp/killstreaks/_straferun.gsc
+Pointer: 0X16D4828
+Buffer: 0X105D4700
+Size: 0X4BAF
+
+Name: maps/mp/killstreaks/_ai_tank.gsc
+Pointer: 0X16D4834
+Buffer: 0X105D92E0
+Size: 0X6691
+
+Name: maps/mp/killstreaks/_airsupport.gsc
+Pointer: 0X16D4840
+Buffer: 0X105DF9A0
+Size: 0X385A
+
+Name: maps/mp/killstreaks/_emp.gsc
+Pointer: 0X16D484C
+Buffer: 0X105E3220
+Size: 0X2459
+
+Name: maps/mp/killstreaks/_helicopter.gsc
+Pointer: 0X16D4858
+Buffer: 0X105E56A0
+Size: 0XB649
+
+Name: maps/mp/killstreaks/_helicopter_guard.gsc
+Pointer: 0X16D4864
+Buffer: 0X105F0D20
+Size: 0X416
+
+Name: maps/mp/killstreaks/_helicopter_gunner.gsc
+Pointer: 0X16D4870
+Buffer: 0X105F4E60
+Size: 0X7D9E
+
+Name: maps/mp/killstreaks/_killstreakrules.gsc
+Pointer: 0X16D487C
+Buffer: 0X105FCC40
+Size: 0X266
+
+Name: maps/mp/killstreaks/_killstreaks.gsc
+Pointer: 0X16D4888
+Buffer: 0X105FF280
+Size: 0X79A1
+
+Name: maps/mp/killstreaks/_killstreak_weapons.gsc
+Pointer: 0X16D4894
+Buffer: 0X10606C60
+Size: 0X2A16
+
+Name: maps/mp/killstreaks/_missile_swarm.gsc
+Pointer: 0X16D48A0
+Buffer: 0X106096A0
+Size: 0X35E1
+
+Name: maps/mp/killstreaks/_missile_drone.gsc
+Pointer: 0X16D48AC
+Buffer: 0X1060CCC0
+Size: 0X2F4F
+
+Name: maps/mp/killstreaks/_planemortar.gsc
+Pointer: 0X16D48B8
+Buffer: 0X1060FC40
+Size: 0X1FCA
+
+Name: maps/mp/killstreaks/_qrdrone.gsc
+Pointer: 0X16D48C4
+Buffer: 0X10611C40
+Size: 0X6BFD
+
+Name: maps/mp/killstreaks/_radar.gsc
+Pointer: 0X16D48D0
+Buffer: 0X10618860
+Size: 0X1919
+
+Name: maps/mp/killstreaks/_rcbomb.gsc
+Pointer: 0X16D48DC
+Buffer: 0X1061A1A0
+Size: 0X3BEA
+
+Name: maps/mp/killstreaks/_remote_weapons.gsc
+Pointer: 0X16D48E8
+Buffer: 0X1061DDC0
+Size: 0X218E
+
+Name: maps/mp/killstreaks/_remotemissile.gsc
+Pointer: 0X16D48F4
+Buffer: 0X1061FF80
+Size: 0X5118
+
+Name: maps/mp/killstreaks/_remotemortar.gsc
+Pointer: 0X16D4900
+Buffer: 0X106250C0
+Size: 0X455
+
+Name: maps/mp/killstreaks/_spyplane.gsc
+Pointer: 0X16D490C
+Buffer: 0X10629600
+Size: 0X483F
+
+Name: maps/mp/killstreaks/_supplycrate.gsc
+Pointer: 0X16D4918
+Buffer: 0X1062DE80
+Size: 0X095
+
+Name: maps/mp/killstreaks/_supplydrop.gsc
+Pointer: 0X16D4924
+Buffer: 0X1062DF40
+Size: 0XCA31
+
+Name: maps/mp/killstreaks/_turret_killstreak.gsc
+Pointer: 0X16D4930
+Buffer: 0X1063A9A0
+Size: 0XB41E
+
+Name: maps/mp/teams/_teams.gsc
+Pointer: 0X16D493C
+Buffer: 0X10645DE0
+Size: 0X1852
+
+Name: maps/mp/teams/_teamset.gsc
+Pointer: 0X16D4948
+Buffer: 0X10647660
+Size: 0X1EE
+
+Name: maps/mp/bots/_bot.gsc
+Pointer: 0X16D4954
+Buffer: 0X10647880
+Size: 0X9381
+
+Name: maps/mp/bots/_bot_combat.gsc
+Pointer: 0X16D4960
+Buffer: 0X10650C20
+Size: 0X63D
+
+Name: maps/mp/bots/_bot_conf.gsc
+Pointer: 0X16D496C
+Buffer: 0X10656F60
+Size: 0X69A
+
+Name: maps/mp/bots/_bot_ctf.gsc
+Pointer: 0X16D4978
+Buffer: 0X10657620
+Size: 0X1922
+
+Name: maps/mp/bots/_bot_dem.gsc
+Pointer: 0X16D4984
+Buffer: 0X10658F60
+Size: 0X16C
+
+Name: maps/mp/bots/_bot_dom.gsc
+Pointer: 0X16D4990
+Buffer: 0X1065A5A0
+Size: 0X1BB7
+
+Name: maps/mp/bots/_bot_hack.gsc
+Pointer: 0X16D499C
+Buffer: 0X1065C180
+Size: 0XB93
+
+Name: maps/mp/bots/_bot_hq.gsc
+Pointer: 0X16D49A8
+Buffer: 0X1065CD40
+Size: 0X17B7
+
+Name: maps/mp/bots/_bot_koth.gsc
+Pointer: 0X16D49B4
+Buffer: 0X1065E520
+Size: 0X15C6
+
+Name: maps/mp/bots/_bot_loadout.gsc
+Pointer: 0X16D49C0
+Buffer: 0X1065FB20
+Size: 0X2389
+
+Name: maps/mp/bots/_bot_sd.gsc
+Pointer: 0X16D49CC
+Buffer: 0X10661EE0
+Size: 0X1C57
+
+Name: clientscripts/mp/_acousticsensor.csc
+Pointer: 0X16D49D8
+Buffer: 0X10663B60
+Size: 0X8A1
+
+Name: clientscripts/mp/_ai_tank.csc
+Pointer: 0X16D49E4
+Buffer: 0X10664420
+Size: 0X156
+
+Name: clientscripts/mp/_airsupport.csc
+Pointer: 0X16D49F0
+Buffer: 0X10665960
+Size: 0X1879
+
+Name: clientscripts/mp/_ambient.csc
+Pointer: 0X16D49FC
+Buffer: 0X10667200
+Size: 0X2187
+
+Name: clientscripts/mp/_ambientpackage.csc
+Pointer: 0X16D4A08
+Buffer: 0X106693C0
+Size: 0X3F65
+
+Name: clientscripts/mp/_audio.csc
+Pointer: 0X16D4A14
+Buffer: 0X1066D360
+Size: 0X3917
+
+Name: clientscripts/mp/_bouncingbetty.csc
+Pointer: 0X16D4A20
+Buffer: 0X10670CA0
+Size: 0X612
+
+Name: clientscripts/mp/_burnplayer.csc
+Pointer: 0X16D4A2C
+Buffer: 0X106712E0
+Size: 0X326
+
+Name: clientscripts/mp/_busing.csc
+Pointer: 0X16D4A38
+Buffer: 0X10671640
+Size: 0XA5E
+
+Name: clientscripts/mp/_callbacks.csc
+Pointer: 0X16D4A44
+Buffer: 0X106720C0
+Size: 0X2A32
+
+Name: clientscripts/mp/_cameraspike.csc
+Pointer: 0X16D4A50
+Buffer: 0X10674B20
+Size: 0XE86
+
+Name: clientscripts/mp/_claymore.csc
+Pointer: 0X16D4A5C
+Buffer: 0X106759E0
+Size: 0X285
+
+Name: clientscripts/mp/_counteruav.csc
+Pointer: 0X16D4A68
+Buffer: 0X10675CA0
+Size: 0X362
+
+Name: clientscripts/mp/_ctf.csc
+Pointer: 0X16D4A74
+Buffer: 0X10676020
+Size: 0X1CA
+
+Name: clientscripts/mp/_destructible.csc
+Pointer: 0X16D4A80
+Buffer: 0X10676220
+Size: 0X24A
+
+Name: clientscripts/mp/_rotating_object.csc
+Pointer: 0X16D4A8C
+Buffer: 0X106764A0
+Size: 0X393
+
+Name: clientscripts/mp/_decoy.csc
+Pointer: 0X16D4A98
+Buffer: 0X10676860
+Size: 0X251
+
+Name: clientscripts/mp/_dogs.csc
+Pointer: 0X16D4AA4
+Buffer: 0X10676AE0
+Size: 0X16C9
+
+Name: clientscripts/mp/_explode.csc
+Pointer: 0X16D4AB0
+Buffer: 0X106781E0
+Size: 0X87D
+
+Name: clientscripts/mp/_explosive_bolt.csc
+Pointer: 0X16D4ABC
+Buffer: 0X10678AA0
+Size: 0X82A
+
+Name: clientscripts/mp/_filter.csc
+Pointer: 0X16D4AC8
+Buffer: 0X10679300
+Size: 0X786
+
+Name: clientscripts/mp/_footsteps.csc
+Pointer: 0X16D4AD4
+Buffer: 0X10679AC0
+Size: 0XE9F
+
+Name: clientscripts/mp/_fx.csc
+Pointer: 0X16D4AE0
+Buffer: 0X1067A980
+Size: 0X252
+
+Name: clientscripts/mp/_fxanim.csc
+Pointer: 0X16D4AEC
+Buffer: 0X1067CEA0
+Size: 0X1416
+
+Name: clientscripts/mp/_global_fx.csc
+Pointer: 0X16D4AF8
+Buffer: 0X1067E2E0
+Size: 0X1873
+
+Name: clientscripts/mp/_helicopter.csc
+Pointer: 0X16D4B04
+Buffer: 0X1067FB80
+Size: 0X198A
+
+Name: clientscripts/mp/_helicopter_sounds.csc
+Pointer: 0X16D4B10
+Buffer: 0X10681540
+Size: 0X4D51
+
+Name: clientscripts/mp/_lights.csc
+Pointer: 0X16D4B1C
+Buffer: 0X106862C0
+Size: 0X4129
+
+Name: clientscripts/mp/_load.csc
+Pointer: 0X16D4B28
+Buffer: 0X1068A420
+Size: 0X1739
+
+Name: clientscripts/mp/_missile_swarm.csc
+Pointer: 0X16D4B34
+Buffer: 0X1068BB80
+Size: 0XACE
+
+Name: clientscripts/mp/_missile_drone.csc
+Pointer: 0X16D4B40
+Buffer: 0X1068C680
+Size: 0XA55
+
+Name: clientscripts/mp/_multi_extracam.csc
+Pointer: 0X16D4B4C
+Buffer: 0X1068D100
+Size: 0X3D6
+
+Name: clientscripts/mp/_music.csc
+Pointer: 0X16D4B58
+Buffer: 0X1068D500
+Size: 0X222A
+
+Name: clientscripts/mp/_planemortar.csc
+Pointer: 0X16D4B64
+Buffer: 0X1068F760
+Size: 0X2C2
+
+Name: clientscripts/mp/_players.csc
+Pointer: 0X16D4B70
+Buffer: 0X1068FA60
+Size: 0X5F9
+
+Name: clientscripts/mp/_qrdrone.csc
+Pointer: 0X16D4B7C
+Buffer: 0X10690080
+Size: 0X1A6A
+
+Name: clientscripts/mp/_rcbomb.csc
+Pointer: 0X16D4B88
+Buffer: 0X10691B20
+Size: 0X2C49
+
+Name: clientscripts/mp/_remotemissile.csc
+Pointer: 0X16D4B94
+Buffer: 0X106947A0
+Size: 0X726
+
+Name: clientscripts/mp/_rewindobjects.csc
+Pointer: 0X16D4BA0
+Buffer: 0X10694F00
+Size: 0X103E
+
+Name: clientscripts/mp/_riotshield.csc
+Pointer: 0X16D4BAC
+Buffer: 0X10695F60
+Size: 0X842
+
+Name: clientscripts/mp/_satchel_charge.csc
+Pointer: 0X16D4BB8
+Buffer: 0X106967E0
+Size: 0X6E
+
+Name: clientscripts/mp/_scrambler.csc
+Pointer: 0X16D4BC4
+Buffer: 0X10696E20
+Size: 0X1AB2
+
+Name: clientscripts/mp/_sticky_grenade.csc
+Pointer: 0X16D4BD0
+Buffer: 0X10698900
+Size: 0X85E
+
+Name: clientscripts/mp/_proximity_grenade.csc
+Pointer: 0X16D4BDC
+Buffer: 0X106991A0
+Size: 0X11F5
+
+Name: clientscripts/mp/_tacticalinsertion.csc
+Pointer: 0X16D4BE8
+Buffer: 0X1069A3C0
+Size: 0X919
+
+Name: clientscripts/mp/_teamset_seals.csc
+Pointer: 0X16D4BF4
+Buffer: 0X1069AD00
+Size: 0X0D2
+
+Name: clientscripts/mp/_treadfx.csc
+Pointer: 0X16D4C00
+Buffer: 0X1069AE00
+Size: 0XA7D
+
+Name: clientscripts/mp/_trophy_system.csc
+Pointer: 0X16D4C0C
+Buffer: 0X1069B8C0
+Size: 0XA6A
+
+Name: clientscripts/mp/_turret.csc
+Pointer: 0X16D4C18
+Buffer: 0X1069C360
+Size: 0X7BE
+
+Name: clientscripts/mp/_utility.csc
+Pointer: 0X16D4C24
+Buffer: 0X1069CB40
+Size: 0X3643
+
+Name: clientscripts/mp/_utility_code.csc
+Pointer: 0X16D4C30
+Buffer: 0X106A01C0
+Size: 0X63D
+
+Name: clientscripts/mp/_vehicle.csc
+Pointer: 0X16D4C3C
+Buffer: 0X106A0820
+Size: 0X12F9
+
+Name: clientscripts/_radiant_live_update.csc
+Pointer: 0X16D4C48
+Buffer: 0X106A1B60
+Size: 0X1E9
+
+Name: codescripts/struct.csc
+Pointer: 0X16D4C54
+Buffer: 0X106A1D80
+Size: 0X1A2
+
+Name: codescripts/delete.csc
+Pointer: 0X16D4C60
+Buffer: 0X106A1F40
+Size: 0X236
+
+Name: codescripts/delete.gsc
+Pointer: 0X16D4C6C
+Buffer: 0X106A21A0
+Size: 0X236
+
+Name: codescripts/struct.gsc
+Pointer: 0X16D4C78
+Buffer: 0X106A2400
+Size: 0X29D
+
+Name: maps/mp/teams/_teamset_multiteam.gsc
+Pointer: 0X16D4C84
+Buffer: 0X106A26E0
+Size: 0X1D93
+
+Name: maps/mp/mp_carrier.gsc
+Pointer: 0X16D4C90
+Buffer: 0X106A44A0
+Size: 0X145C
+
+Name: maps/mp/mp_dockside.gsc
+Pointer: 0X16D4C9C
+Buffer: 0X106A5920
+Size: 0X1171
+
+Name: maps/mp/mp_dockside_crane.gsc
+Pointer: 0X16D4CA8
+Buffer: 0X106A6AC0
+Size: 0X3744
+
+Name: maps/mp/mp_express_train.gsc
+Pointer: 0X16D4CB4
+Buffer: 0X106AA240
+Size: 0X29E9
+
+Name: maps/mp/mp_nightclub.gsc
+Pointer: 0X16D4CC0
+Buffer: 0X106ACC60
+Size: 0X14A6
+
+Name: maps/mp/mp_village.gsc
+Pointer: 0X16D4CCC
+Buffer: 0X106AE120
+Size: 0X1635
+
+Name: maps/mp/mp_overflow.gsc
+Pointer: 0X16D4CD8
+Buffer: 0X106AF780
+Size: 0X16AC
+
+Name: maps/mp/mp_la.gsc
+Pointer: 0X16D4CE4
+Buffer: 0X106B0E40
+Size: 0X14E
+
+Name: maps/mp/mp_meltdown.gsc
+Pointer: 0X16D4CF0
+Buffer: 0X106B2280
+Size: 0X750
+
+Name: maps/mp/mp_drone.gsc
+Pointer: 0X16D4CFC
+Buffer: 0X106B2A00
+Size: 0X1139
+
+Name: maps/mp/mp_express.gsc
+Pointer: 0X16D4D08
+Buffer: 0X106B3B60
+Size: 0X935
+
+Name: maps/mp/mp_hijacked.gsc
+Pointer: 0X16D4D14
+Buffer: 0X106B44C0
+Size: 0X194
+
+Name: maps/mp/mp_raid.gsc
+Pointer: 0X16D4D20
+Buffer: 0X106B5DE0
+Size: 0XDF6
+
+Name: maps/mp/mp_slums.gsc
+Pointer: 0X16D4D2C
+Buffer: 0X106B6C00
+Size: 0X248C
+
+Name: maps/mp/mp_socotra.gsc
+Pointer: 0X16D4D38
+Buffer: 0X106B90C0
+Size: 0XDB9
+
+Name: maps/mp/mp_turbine.gsc
+Pointer: 0X16D4D44
+Buffer: 0X106B9EA0
+Size: 0X12B7
+
+Name: maps/mp/mp_nuketown_2020.gsc
+Pointer: 0X16D4D50
+Buffer: 0X106BB180
+Size: 0X33DC
+
+Name: maps/mp/mp_downhill_cablecar.gsc
+Pointer: 0X16D4D5C
+Buffer: 0X106BE580
+Size: 0X3385
+
+Name: maps/mp/mp_downhill.gsc
+Pointer: 0X16D4D68
+Buffer: 0X106C1920
+Size: 0XAAC
+
+Name: maps/mp/mp_hydro.gsc
+Pointer: 0X16D4D74
+Buffer: 0X106C2400
+Size: 0X3169
+
+Name: maps/mp/mp_skate.gsc
+Pointer: 0X16D4D80
+Buffer: 0X106C5580
+Size: 0XAAC
+
+Name: maps/mp/mp_mirage.gsc
+Pointer: 0X16D4D8C
+Buffer: 0X106C6060
+Size: 0X7F4
+
+Name: maps/mp/mp_concert.gsc
+Pointer: 0X16D4D98
+Buffer: 0X106C6880
+Size: 0XC8C
+
+Name: maps/mp/mp_magma.gsc
+Pointer: 0X16D4DA4
+Buffer: 0X106C7540
+Size: 0X1BC5
+
+Name: maps/mp/mp_studio.gsc
+Pointer: 0X16D4DB0
+Buffer: 0X106C9120
+Size: 0X1F19
+
+Name: maps/mp/mp_vertigo.gsc
+Pointer: 0X16D4DBC
+Buffer: 0X106CB060
+Size: 0XFB6
+
+Name: maps/mp/mp_bridge.gsc
+Pointer: 0X16D4DC8
+Buffer: 0X106CC040
+Size: 0X1AA0
+
+Name: maps/mp/mp_castaway.gsc
+Pointer: 0X16D4DD4
+Buffer: 0X106CDB00
+Size: 0XC4E
+
+Name: maps/mp/mp_paintball.gsc
+Pointer: 0X16D4DE0
+Buffer: 0X106CE780
+Size: 0X134B
+
+Name: maps/mp/mp_uplink.gsc
+Pointer: 0X16D4DEC
+Buffer: 0X106CFB00
+Size: 0XFE5
+
+Name: maps/mp/mp_dig.gsc
+Pointer: 0X16D4DF8
+Buffer: 0X106D0B00
+Size: 0XA20
+
+Name: maps/mp/mp_frostbite.gsc
+Pointer: 0X16D4E04
+Buffer: 0X106D1540
+Size: 0X18CD
+
+Name: maps/mp/mp_pod.gsc
+Pointer: 0X16D4E10
+Buffer: 0X106D2E40
+Size: 0XCF2
+
+Name: maps/mp/mp_takeoff.gsc
+Pointer: 0X16D4E1C
+Buffer: 0X106D3B60
+Size: 0X2159
+
+Name: clientscripts/mp/mp_express.csc
+Pointer: 0X16D4E28
+Buffer: 0X106D5CE0
+Size: 0XC9D
+
+Name: clientscripts/mp/mp_dockside.csc
+Pointer: 0X16D4E34
+Buffer: 0X106D69A0
+Size: 0X681
+
+Name: clientscripts/mp/mp_drone_fx.csc
+Pointer: 0X16D4E40
+Buffer: 0X106D7060
+Size: 0X263D
+
+Name: clientscripts/mp/mp_hydro.csc
+Pointer: 0X16D4E4C
+Buffer: 0X106D96C0
+Size: 0X189D
+
+Name: clientscripts/mp/mp_overflow.csc
+Pointer: 0X16D4E58
+Buffer: 0X106DAF80
+Size: 0X3E
+
+Name: clientscripts/mp/mp_carrier.csc
+Pointer: 0X16D4E64
+Buffer: 0X106DB2C0
+Size: 0X8F
+
+Name: clientscripts/mp/mp_nuketown_2020.csc
+Pointer: 0X16D4E70
+Buffer: 0X106DBB00
+Size: 0XD1
+
+Name: clientscripts/mp/mp_raid.csc
+Pointer: 0X16D4E7C
+Buffer: 0X106DC820
+Size: 0X2EA
+
+Name: clientscripts/mp/mp_hijacked.csc
+Pointer: 0X16D4E88
+Buffer: 0X106DCB40
+Size: 0X5EA
+
+Name: clientscripts/mp/createfx/mp_concert_fx.csc
+Pointer: 0X16D4E94
+Buffer: 0X106DD160
+Size: 0X94F9
+
+Name: clientscripts/mp/mp_uplink.csc
+Pointer: 0X16D4EA0
+Buffer: 0X106E6680
+Size: 0X1A99
+
+Name: maps/mp/animscripts/dog_combat.gsc
+Pointer: 0X16D4EAC
+Buffer: 0X106E8140
+Size: 0X9C9
+
+Name: maps/mp/animscripts/dog_init.gsc
+Pointer: 0X16D4EB8
+Buffer: 0X106E8B40
+Size: 0X6CF
+
+Name: maps/mp/killstreaks/_dogs.gsc
+Pointer: 0X16D4EC4
+Buffer: 0X106E9240
+Size: 0X3E2E

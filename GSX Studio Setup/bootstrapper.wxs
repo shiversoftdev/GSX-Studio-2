@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+      xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal"
+     xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
+  <Bundle Name="GSX Studio" Version="1.4.0.0" Manufacturer="Serious" IconSourceFile="Resources\Icon.ico" UpgradeCode="0714eb1d-2047-47f4-8022-9875536fbe78">
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense">
+          <bal:WixStandardBootstrapperApplication
+            LicenseFile="Resources\gsxstudioeula.rtf"
+            LogoFile="Resources\Icon.ico"
+            />
+        </BootstrapperApplicationRef>
+
+    <util:RegistrySearch Root="HKLM" Key="SOFTWARE\Microsoft\Net Framework Setup\NDP\v4\Full" Value="Version" Variable="Net4FullVersion" />
+    <util:RegistrySearch Root="HKLM" Key="SOFTWARE\Microsoft\Net Framework Setup\NDP\v4\Full" Value="Release" Variable="Net4Release" />
+    <util:RegistrySearch Root="HKLM" Key="SOFTWARE\Microsoft\Net Framework Setup\NDP\v4\Full" Value="Release" Variable="Net64Release" Win64="yes" />
+    <util:RegistrySearch Root="HKLM" Key="SOFTWARE\Classes\Installer\Dependencies\Microsoft.VS.VC_RuntimeMinimumVSU_x86,v14" Value="Version" Variable="VCR" />
+    <Chain>
+      <ExePackage Id="Net45" Name="Microsoft .NET Framework 4.5.2 Setup" Cache="no" Compressed="yes" PerMachine="yes" Permanent="yes" Vital="yes" InstallCommand="/q"
+        SourceFile="Resources\NDP452-KB2901907-x86-x64-AllOS-ENU.exe"
+        DetectCondition="(Net4Release >= &quot;379893&quot;) AND (NOT VersionNT64 OR (Net64Release >= &quot;379893&quot;))"
+        InstallCondition="(VersionNT >= v6.0 OR VersionNT64 >= v6.0) AND (NOT (Net4Release >= &quot;379893&quot; OR Net64Release >= &quot;379893&quot;))"/>
+
+
+      <ExePackage Id="HasVCR" Name="Microsoft .NET VC++ Runtime" Cache="no" Compressed="yes" PerMachine="yes" Permanent="yes" Vital="yes" InstallCommand="/q"
+        SourceFile="Resources\vc_redist.x86.exe"
+        DetectCondition="VCR >= v14.0.23026"
+        InstallCondition="NOT (VCR OR VCR >= v14.0.23026)"/>
+
+      <RollbackBoundary />
+
+      <MsiPackage Id="MainPackage" SourceFile="Product.msi" DisplayInternalUI="yes" Compressed="yes" Vital="yes" />
+    </Chain>
+  </Bundle>
+</Wix>

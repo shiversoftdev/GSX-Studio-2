@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <style name ="TODO" color="#ff6666" />
+  <style name="COMMENT" color="#57a64a"/>
+  <style name="SECURE_STRING" color="#D85050" />
+  <style name="STD_STRING" color="#d69d85" />
+  <style name="TYPE" color="#bd63c5" />
+  <style name="PPGREY" color ="#999999"/>
+  <style name="ANNOTATION" color="#00cccc"/>
+  <style name="KW1" color="#569cd6"/>
+  <style name="KW2" color="#4ec9b0"/>
+  <style name ="MAIN" color="#ff6666" />
+  <style name="OPERATOR_GREY" color="#b4b4b4" />
+  <style name="DOCUMENTATION" color="#4ec9b0" fontStyle="Bold"/>
+  <style name="INTERNALFUNCTIONCALL" color ="#569cd6" fontStyle="Bold"/>
+  <style name="FUNCTIONCALL" fontStyle="Bold"/>
+  <style name ="NUMBER" color="#b5cea8"/>
+  
+  <rule style="COMMENT">//[^\r^\n]*[\r\n]*</rule> <!-- Line Comment -->
+  <rule style="COMMENT" options="Singleline">(/\*.*?\*/)|(/\*.*)</rule> <!-- Block Comment -->
+  <rule style="COMMENT" options="Singleline,RightToLeft">(/\*.*?\*/)|(.*\*/)</rule> <!-- Block Comment -->
+
+  <rule style="ANNOTATION" options="Singleline">(/\!.*?\!/)|(/\!.*)</rule> <!-- String Blacklist -->
+  <rule style="ANNOTATION" options="Singleline,RightToLeft">(/\!.*?\!/)|(.*\!/)</rule> <!-- String Blacklist -->
+  
+  <rule style="STD_STRING">\&quot;((\\.)|[^\\\\\&quot;])*\&quot;</rule> <!-- String -->
+  <rule style="STD_STRING">%\b[_a-zA-Z]+[0-9A-Za-z_]*\b</rule> <!-- Anim -->
+  <rule style="MAIN" options="IgnoreCase">\[main\]</rule> <!-- Entry Point Label -->
+  <rule style="TODO" options="IgnoreCase">//TODO[^\r^\n]*[\r\n]*</rule> <!-- Entry Point Label -->
+  <rule style="MAIN" options="IgnoreCase">\[((inline)|(noinline)|(override)|(export))\]</rule> <!-- Inline/Noinline -->
+  <rule style="DOCUMENTATION" options="IgnoreCase">\[(description\(\"[^\"]*\"\))\]</rule>
+  <rule style="TYPE" options="IgnoreCase">(\[typestrict-)[a-zA-Z0-9_\:]+(\])</rule> <!-- Typestrict -->
+  <rule style="PPGREY" options="Singleline">\#([^\n^\r^\s])*</rule> <!-- Preprocessor -->
+  <rule style="OPERATOR_GREY" options="IgnoreCase">[!~@#\$%\^&amp;\*\(\)\-\+=\{\}\[\]\|;\:&lt;&gt;,\.\?/]</rule> <!-- Operator -->
+  <rule style="KW1" options="IgnoreCase">\b((array)|(libraries)|(return)|(waitmin)|(thread)|(goto)|(break)|(continue)|(if)|(else)|(for)|(foreach)|(while)|(delete)|(destroy)|(wait)|(realwait)|(waittillframeend)|(switch)|(case)|(default)|(struct)|(waittill_any)|(waittillmatch)|(waittill)|(endon)|(notify)|(in)|(true)|(false)|(undefined)|(define))\b</rule> <!-- Keywords 1 -->
+  <rule style="KW2" options="IgnoreCase">\b((self)|(game)|(level)|(player)|(anim)|(this))\b</rule> <!-- Keywords 2 -->
+  <rule style="KW1" options="IgnoreCase">\b(animtrees)\b</rule><!-- animtrees -->
+  <rule style="MAIN" options="IgnoreCase">\b((setint)|(getint)|(setbyte)|(getbyte)|(setstring)|(getstring)|(getfloat)|(setfloat)|(setbytes)|(getbytes)|(__RPCPCBASE__)|(__RPCCNSLBASE__)|(__RPCCNSLRET__)|(__RPCPCRET__)|(RPC))\b</rule><!-- animtrees -->
+  <rule style="TYPE">&lt;[a-zA-Z0-9_\:]+&gt;</rule> <!-- Type Specifier -->
+  <rule style="PPGREY">%[a-zA-Z0-9_]+%</rule> <!-- EnvironmentVar -->
+  <rule style="OPERATOR_GREY">[A-Za-z_]+[A-Za-z0-9_]*\:</rule> <!-- Label -->
+  <rule style="INTERNALFUNCTIONCALL" options="IgnoreCase">((platformswitch)|(inttochar)|(chartoint)|(istrue)|(isdefined)|(arraycall)|(arraythread)|(rgb)|(rgb255)|(getname)|(getplayerfromname))[ ]*\(</rule> <!-- Key Functions -->
+  <rule style="FUNCTIONCALL">[_A-Za-z]+[A-Za-z0-9_]*[ ]*\(</rule>
+  <rule style="NUMBER">-?\b0x([0-9A-Fa-f]+)\b</rule> <!-- Numbers 1 -->
+  <rule style="NUMBER">-?\b\d+([\.]\d+)?[dfDF]?\b</rule><!--  Numbers 2 -->
+  
+  
+  <folding start="/\*( [^\s]*\s?)?" finish="\*/" options="Multiline"/>
+  <folding start="/\!( [^\s]*\s?)?" finish="\!/" options="Multiline"/>
+  <!-- <folding start="[\)\]A-Za-z0-9_][\s]*{" finish="}" options="Multiline"/> -->
+  <folding start="{" finish="}" options="Multiline"/>
+  <folding start="(#region)( [^\s]*\s?)?" finish="#endregion" options="Multiline,IgnoreCase"/>
+  <folding start="(#debugonly)" finish="#enddebug" options="Multiline,IgnoreCase"/>
+</doc>
